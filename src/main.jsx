@@ -1,15 +1,18 @@
 import App from "./App.jsx";
 import "./index.css";
-
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./index.css";
+import AboutPage from "./pages/Aboutpage.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/about",
+    element: <AboutPage />,
   },
 ]);
 

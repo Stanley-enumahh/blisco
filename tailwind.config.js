@@ -7,6 +7,10 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         Baijuree: ["Bai Jamjuree", "sans-serif"],
       },
+      colors: {
+        "primary-color": "#f58634",
+        secondaryColor: "#8a3031",
+      },
     },
   },
   plugins: [],

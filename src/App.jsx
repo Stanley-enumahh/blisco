@@ -1,11 +1,12 @@
 import "./App.css";
+import Homepage from "./pages/Homepage";
 
-function App() {
+export default function App() {
   return (
     <>
-      <div className="text-xl font-Baijuree">blisco</div>
+      <div className="">
+        <Homepage />
+      </div>
     </>
   );
 }
-
-export default App;
