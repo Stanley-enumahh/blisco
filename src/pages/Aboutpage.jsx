@@ -2,6 +2,10 @@ import { Navbar } from "../components/Navbar";
 import AboutImg from "../assets/IMG_20231106_171014_490@-1279249875.jpg";
 import { CgMoreVertical } from "react-icons/cg";
 import { RxArrowTopRight } from "react-icons/rx";
+import { GrTarget } from "react-icons/gr";
+import { TbGrowth } from "react-icons/tb";
+import { AiOutlineTransaction } from "react-icons/ai";
+import { Footer } from "../components/footer";
 
 export default function AboutPage() {
   return (
@@ -11,7 +15,7 @@ export default function AboutPage() {
         <div className="w-full h-[350px] relative">
           <img className="w-full h-full object-cover" src={AboutImg} alt="" />
           <div className="absolute overlay w-full top-0 h-full  text-white  items-center flex">
-            <h1 className="md:ml-[200px] ml-7 text-xl bg-secondaryColor rounded-sm px-5 shadow-lg">
+            <h1 className="md:ml-[200px] ml-7 text-xl bg-primary-color rounded-sm px-4 shadow-lg">
               ABOUT US
             </h1>
           </div>
@@ -93,7 +97,118 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+        {/* values */}
+        <Value />
       </div>
+
+      <Footer />
     </div>
   );
 }
+
+export const Emblem = () => {
+  return (
+    <div className="md:w-[80%] w-[90%] justify-center text-center md:text-start items-center mb-7 mt-7 flex flex-col gap-3 md:gap-5 text-primary-color">
+      <h1 className="md:text-4xl text-2xl font-bold">
+        EXPERIENCE BAKING EXCELLENCE
+      </h1>
+      <p>GREAT BAKED GOODS TO KEEP YOU COMING BACK FOR MORE</p>
+    </div>
+  );
+};
+
+export const Value = () => {
+  return (
+    <div className="flex flex-col justify-center items-center gap-10 p-3 md:p-14 bg-[#343434] md:mt-6">
+      <Emblem />
+      <div className="w-[90%] md:w-[80%] flex-col md:flex-row flex gap-8 md:justify-evenly justify-center">
+        {/* one value start*/}
+        <div className="w-[330px] md:w-[300px] h-[260px] md:h-[300px] rounded-lg hover:scale-105 duration-200 transition-all flex p-4 flex-col justify-between border border-gray-300">
+          <div className="p-4 rounded-full bg-primary-color text-white w-fit">
+            <GrTarget size={30} />
+          </div>
+          <div className="p-3 flex flex-col gap-2 cursor-pointer">
+            <h1 className="text-primary-color font-bold">VISION STATEMENT</h1>
+            <p className="text-neutral-200">
+              To be the Most Preferred Food and Beverages Brand in every Home
+              within and Outside Nigeria
+            </p>
+          </div>
+        </div>
+        {/* one value end*/}
+        {/* one value start*/}
+        <div className="w-[330px] md:w-[300px] h-[260px] md:h-[300px] p-4 rounded-lg hover:scale-105 duration-200  flex flex-col justify-between border border-gray-300">
+          <div className="p-4 rounded-full bg-primary-color text-white w-fit">
+            <TbGrowth size={30} />
+          </div>
+          <div className="p-3 flex flex-col cursor-pointer gap-2">
+            <h1 className="text-primary-color font-bold">MISSION STATEMENT</h1>
+            <p className="text-neutral-200">
+              To consistently Produce and sell Premium Quality Products to our
+              Customers with Excellent customer service experience at all times.
+            </p>
+          </div>
+        </div>
+        {/* core value */}
+        <div className="w-[330px] md:w-[300px] h-fit md:h-[300px] p-6 text-white rounded-lg hover:scale-105 duration-200 flex flex-col justify-center border border-gray-300">
+          <div className="flex flex-col gap-6 cursor-pointer">
+            <div className="p-4 rounded-full bg-primary-color text-white w-fit">
+              <AiOutlineTransaction size={30} />
+            </div>
+            <div className="flex flex-col">
+              <h1 className="text-primary-color font-bold">OUR CORE VALUES:</h1>
+              <div className="flex flex-col">
+                <p>
+                  <span className="font-bold">P</span> - Premium Quality
+                  Products
+                </p>
+                <p>
+                  <span className="font-bold">I</span> - Integrity
+                </p>
+                <p>
+                  <span className="font-bold">C</span> - Customer Satisfaction
+                </p>
+                <p>
+                  <span className="font-bold">A</span> - Accountability
+                </p>
+                <p>
+                  <span className="font-bold">R</span> - Respect
+                </p>
+                <p>
+                  <span className="font-bold">T</span> - Transparency
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Newsletter />
+    </div>
+  );
+};
+
+export const Newsletter = () => {
+  return (
+    <div className="w-[90%] md:w-[80%] md:gap-0 gap-4 flex flex-col md:flex-row justify-between md:mb-0 mb-6">
+      <div className="flex flex-col w-full md:w-[60%] text-white gap-4">
+        <h2 className="text-primary-color text-xl">
+          Subscribe to Our Newsletter
+        </h2>
+        <p className="text-sm">
+          To stay up-to-date on all our Promotions and information and stories
+          as they unfold, subscribe to our news service.
+        </p>
+      </div>
+      <div className="flex flex-col gap-4 text-white">
+        <p className="font-bold">Enter your email:</p>
+        <input
+          type="email"
+          name=""
+          id=""
+          placeholder="email"
+          className=" outline-none px-3 py-1 bg-transparent border-gray-100 border w-[250px]"
+        />
+      </div>
+    </div>
+  );
+};
