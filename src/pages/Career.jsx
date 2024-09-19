@@ -7,7 +7,7 @@ export default function Career() {
       <Navbar />
       <div className="w-full flex justify-center gap-10 items-center flex-col md:mt-[170px] mt-[130px]">
         <div className="md:w-[80%] w-[90%] md:text-start text-center justify-center items-center flex flex-col gap-6 ">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-4 md:gap-2">
             <h1 className="text-4xl font-bold">
               Join Our Team At{" "}
               <span className="text-primary-color">BliscoFoods</span>{" "}
@@ -17,7 +17,7 @@ export default function Career() {
               with you
             </p>
           </div>
-          <div className="w-full md:w-[60%] flex flex-col gap-3">
+          <div className="w-full md:w-[60%] flex flex-col gap-5 md:gap-3">
             <div className="flex flex-row justify-between items-center">
               <label htmlFor="name">Name:</label>
               <input
@@ -25,7 +25,7 @@ export default function Career() {
                 name=""
                 id="name"
                 placeholder="name"
-                className="outline-none border border-black px-3 py-2 bg-transparent w-[250px] md:w-[400px]"
+                className="outline-none border border-black px-3 py-2 bg-transparent w-[200px] md:w-[400px]"
               />
             </div>
             <div className="flex flex-row justify-between items-center">
@@ -35,7 +35,7 @@ export default function Career() {
                 name=""
                 id="tel"
                 placeholder="phone number"
-                className="outline-none border border-black px-3 py-2 bg-transparent  w-[220px] md:w-[400px]"
+                className="outline-none border border-black px-3 py-2 bg-transparent  w-[180px] md:w-[400px]"
               />
             </div>
             <div className="flex flex-row justify-between items-center">
@@ -45,7 +45,7 @@ export default function Career() {
                 name=""
                 id="email"
                 placeholder="email"
-                className="outline-none border border-black px-3 py-2 bg-transparent  w-[250px] md:w-[400px]"
+                className="outline-none border border-black px-3 py-2 bg-transparent  w-[200px] md:w-[400px]"
               />
             </div>
             <div className="flex flex-row justify-between items-center">
@@ -55,35 +55,20 @@ export default function Career() {
                 name=""
                 id="comment"
                 placeholder="write a short note on your qualities"
-                className="outline-none border border-black px-3 py-2 bg-transparent  w-[250px] md:w-[400px]"
+                className="outline-none border border-black px-3 py-2 bg-transparent  w-[200px] md:w-[400px]"
               />
             </div>
-            <div className="flex flex-row justify-between items-center">
+            <div className="flex flex-col justify-between items-start">
               <label htmlFor="CV">CV:</label>
-              <input
-                type="file"
-                name="Cv"
-                id="Cv"
-                className=" border-black px-3 py-2 bg-transparent w-[400px]"
-              />
+              <input type="file" name="Cv" id="Cv" className=" py-2 " />
             </div>
-            <div className="flex flex-row justify-between items-center">
+            <div className="flex flex-col justify-between items-start">
               <label htmlFor="passport">Paasport photogragh:</label>
-              <input
-                type="file"
-                name="Cv"
-                id="passport"
-                className=" border-black px-3 py-2 bg-transparent w-[400px]"
-              />
+              <input type="file" name="Cv" id="passport" className=" py-2" />
             </div>
-            <div className="flex flex-row justify-between items-center">
+            <div className="flex flex-col justify-between items-start">
               <label htmlFor="passport">ID CARD:</label>
-              <input
-                type="file"
-                name="Cv"
-                id="ID"
-                className=" border-black px-3 py-2 bg-transparent w-[400px]"
-              />
+              <input type="file" name="Cv" id="ID" className="py-2" />
             </div>
           </div>
         </div>
