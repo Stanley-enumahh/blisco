@@ -66,7 +66,7 @@ export const Navbar = () => {
               onClick={toggleSidebar}
               className="hover:bg-[#f58634] px-2 py-1 rounded-sm transition-all duration-150 hover:text-white md:text-black text-white text-lg md:text-sm"
             >
-              <Link to="/">Our Products</Link>
+              <Link to="/product">Our Products</Link>
             </li>
             <li
               onClick={toggleSidebar}
