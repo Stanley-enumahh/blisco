@@ -43,12 +43,12 @@ export const Navbar = () => {
             </ul>
             <li
               onClick={toggleSidebar}
-              className="hover:text-primary-color px-2 py-1 md:mt-0 mt-4 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
+              className="md:hover:text-primary-color px-2 py-1 md:mt-0 mt-4 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
             >
               <Link to="/">Home</Link>
             </li>
 
-            <li className="hover:text-primary-color flex-col flex gap-5 px-2 py-1 rounded-sm transition-all duration-150  md:text-black text-white text-lg md:text-sm">
+            <li className="md:hover:text-primary-color flex-col flex gap-5 px-2 py-1 rounded-sm transition-all duration-150  md:text-black text-white text-lg md:text-sm">
               <div className="flex flex-row gap-3 justify-between items-center duration-150 transition-all">
                 <Link onClick={toggleSidebar} to="/about">
                   About Us
@@ -56,7 +56,7 @@ export const Navbar = () => {
                 <IoIosArrowDown size={20} onClick={toggleDropdown} />
               </div>
               <span
-                className={`flex shadow-md absolute top-[90px] bg-[#fbf9ff] py-2 transition-all duration-150 md:p-3 md:py-7 pl-5 ${
+                className={`flex shadow-md md:absolute top-[90px] md:bg-[#fbf9ff] py-2 transition-all duration-150 md:p-3 md:py-7 pl-5 ${
                   dropDown ? "flex" : "hidden"
                 } `}
               >
@@ -66,25 +66,25 @@ export const Navbar = () => {
 
             <li
               onClick={toggleSidebar}
-              className="hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 hover:text-white md:text-black text-white text-lg md:text-sm"
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
             >
               <Link to="/product">Our Products</Link>
             </li>
             <li
               onClick={toggleSidebar}
-              className="hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
             >
               <Link to="/career">Career</Link>
             </li>
             <li
               onClick={toggleSidebar}
-              className="hover:text-primary-color md:hidden flex px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
+              className="md:hover:text-primary-color md:hidden flex px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
             >
               <Link to="/">Become a Distributor</Link>
             </li>
             <li
               onClick={toggleSidebar}
-              className="hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
             >
               <Link to="/contactUs">Contact Us</Link>
             </li>
