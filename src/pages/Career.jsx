@@ -1,13 +1,19 @@
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/footer";
+import teamPix from "../assets/IMG_20231106_171355_128@765762521.jpg";
 
 export default function Career() {
   return (
     <div className="w-full flex justify-center">
       <Navbar />
-      <div className="w-full flex justify-center gap-10 items-center flex-col md:mt-[170px] mt-[130px]">
-        <div className="md:w-[80%] w-[90%] md:text-start text-center justify-center items-center flex flex-col gap-6 ">
-          <div className="flex flex-col gap-4 md:gap-2">
+      <div className="w-full flex justify-center gap-10 items-center flex-col md:mt-[140px] mt-[130px]">
+        <div className="md:w-full w-[90%] md:text-start text-center justify-center items-center flex flex-col gap-6 ">
+          <div className="flex flex-col gap-4 md:gap-2 w-full">
+            <img
+              src={teamPix}
+              className="h-[400px] w-full object-cover"
+              alt=""
+            />
             <h1 className="text-4xl font-bold">
               Join Our Team At{" "}
               <span className="text-primary-color">BliscoFoods</span>{" "}
