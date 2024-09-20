@@ -201,13 +201,18 @@ export const Newsletter = () => {
       </div>
       <div className="flex flex-col gap-4 text-white">
         <p className="font-bold">Enter your email:</p>
-        <input
-          type="email"
-          name=""
-          id=""
-          placeholder="email"
-          className=" outline-none px-3 py-1 bg-transparent border-gray-100 border w-[250px]"
-        />
+        <div className="flex flex-row gap-1">
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="email"
+            className=" outline-none px-3 py-1 bg-transparent border-gray-100 border w-[250px]"
+          />
+          <button className=" py-1 px-3 bg-[#ebebeb] text-black">
+            Subscribe
+          </button>
+        </div>
       </div>
     </div>
   );
