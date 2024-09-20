@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         Baijuree: ["Bai Jamjuree", "sans-serif"],
+        ralewaay: ["Raleway", "sans-serif"],
       },
       colors: {
         "primary-color": "#f58634",

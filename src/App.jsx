@@ -4,7 +4,7 @@ import Homepage from "./pages/Homepage";
 export default function App() {
   return (
     <>
-      <div className="">
+      <div className="font-ralewaay">
         <Homepage />
       </div>
     </>

@@ -22,7 +22,7 @@ export const Navbar = () => {
         </div>
         <nav className="flex z-50">
           <ul
-            className={`flex md:flex-row md:w-fit  w-full flex-col gap-5 top-0 text-sm md:static absolute transition-all duration-150 md:h-fit h-screen md:bg-transparent bg-primary-color z-50 md:pl-0 px-5 md:pt-0 md:shadow-none shadow-xl
+            className={`flex md:flex-row md:w-fit  w-full flex-col gap-5 top-0 text-sm md:static absolute transition-all duration-150 md:h-fit h-screen md:bg-transparent md:font-bold font-normal bg-primary-color z-50 md:pl-0 px-5 md:pt-0 md:shadow-none shadow-xl
                ${sidebar ? "left-[0]" : "left-[-100%]"}`}
           >
             <ul className="flex flex-row justify-between md:hidden items-center w-full ">
