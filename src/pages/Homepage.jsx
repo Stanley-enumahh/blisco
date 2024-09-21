@@ -6,7 +6,7 @@ import { Footer } from "../components/footer";
 export default function Homepage() {
   return (
     <>
-      <div className=" flex flex-col h-fit w-full">
+      <div className=" flex flex-col h-fit w-full font-ralewaay">
         <Navbar />
         <Hero1 />
         <Hero2 />

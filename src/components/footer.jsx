@@ -4,7 +4,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaTwitter } from "react-icons/fa";
 export const Footer = () => {
   return (
-    <div className="md:h-[470px] h-fit w-full flex flex-col bg-[#131b23] text-white justify-between md:p-8 md:pt-16 items-center">
+    <div className="md:h-[470px] h-fit w-full flex flex-col bg-[#131b23] text-white justify-between md:p-8 pt-6 md:pt-16 items-center font-ralewaay">
       <div className="md:w-[100%] w-[90%] md:gap-0 gap-7 flex-col h-fit flex md:flex-row justify-evenly ">
         <div className=" flex flex-col gap-1">
           <div className="p-3 w-[140px] h-[140px] ">

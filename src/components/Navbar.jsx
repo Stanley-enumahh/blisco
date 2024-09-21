@@ -15,7 +15,7 @@ export const Navbar = () => {
     console.log(400);
   };
   return (
-    <div className="flex w-full h-fit justify-center py-2 z-50 bg-[#fbf9ff] fixed">
+    <div className="flex w-full h-fit justify-center py-2 z-50 bg-[#fbf9ff] fixed font-ralewaay">
       <div className="w-[90%] h-fit flex flex-row justify-between items-center">
         <div className="w-fit h-[70px] p-2 overflow-hidden flex justify-center items-center">
           <img
@@ -53,14 +53,20 @@ export const Navbar = () => {
                 <Link onClick={toggleSidebar} to="/about">
                   About Us
                 </Link>
-                <IoIosArrowDown size={20} onClick={toggleDropdown} />
+                <IoIosArrowDown
+                  size={20}
+                  className="flex md:hidden"
+                  onClick={toggleDropdown}
+                />
               </div>
               <span
-                className={`flex shadow-md md:absolute top-[90px] md:bg-[#fbf9ff] py-2 transition-all duration-150 md:p-3 md:py-7 pl-5 ${
+                className={`flex  shadow-md md:hidden md:bg-[#fbf9ff] py-2 transition-all duration-150 pl-5 ${
                   dropDown ? "flex" : "hidden"
                 } `}
               >
-                <Link to="/">Social Responsibility</Link>
+                <Link onClick={toggleSidebar} to="/responsibility">
+                  Social responsibility
+                </Link>
               </span>
             </li>
 
@@ -87,6 +93,12 @@ export const Navbar = () => {
               className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
             >
               <Link to="/contactUs">Contact Us</Link>
+            </li>
+            <li
+              onClick={toggleSidebar}
+              className="md:hover:text-primary-color md:flex hidden px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
+            >
+              <Link to="/responsibility">Social responsibility</Link>
             </li>
           </ul>
         </nav>

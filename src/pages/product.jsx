@@ -65,7 +65,7 @@ export function ProductDesign(props) {
 
 const Intro = () => {
   return (
-    <div className="Bakery-overlay relative h-[400px] w-full">
+    <div className="Bakery-overlay relative h-[400px] w-full font-ralewaay">
       <img src={products} className="" alt="" />
       <div className="absolute">
         <h1>

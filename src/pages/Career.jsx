@@ -1,29 +1,31 @@
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/footer";
-import teamPix from "../assets/IMG_20231106_171355_128@765762521.jpg";
+import teamPix from "../assets/adeolu-eletu-E7RLgUjjazc-unsplash.jpg";
 
 export default function Career() {
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center font-ralewaay">
       <Navbar />
-      <div className="w-full flex justify-center gap-10 items-center flex-col md:mt-[140px] mt-[130px]">
-        <div className="md:w-full w-[90%] md:text-start text-center justify-center items-center flex flex-col gap-6 ">
-          <div className="flex flex-col gap-4 md:gap-2 w-full">
+      <div className="w-full flex justify-center gap-10 items-center flex-col md:mt-[80px] mt-[70px]">
+        <div className="w-full md:text-start text-center justify-center items-center flex flex-col gap-6 ">
+          <div className="flex flex-col gap-4 md:gap-2 w-full relative">
             <img
               src={teamPix}
               className="h-[400px] w-full object-cover"
               alt=""
             />
-            <h1 className="text-4xl font-bold">
-              Join Our Team At{" "}
-              <span className="text-primary-color">BliscoFoods</span>{" "}
-            </h1>
-            <p>
-              Join our team by submitting your resume and we will get in touch
-              with you
-            </p>
+            <div className="absolute Career-pix w-full h-full flex flex-col justify-center gap-4 md:pl-[100px] text-white md:p-0 p-5">
+              <h1 className="text-5xl font-bold">
+                Join Our Team At{" "}
+                <span className="text-primary-color">BliscoFoods</span>{" "}
+              </h1>
+              <p>
+                Join our superb team by submitting the required details below
+                and we will get in touch with you
+              </p>
+            </div>
           </div>
-          <div className="w-full md:w-[60%] flex flex-col gap-5 md:gap-3">
+          <div className="w-[90%] md:w-[60%] pt-5 flex flex-col gap-5 md:gap-3">
             <div className="flex flex-row justify-between items-center">
               <label htmlFor="name">Name:</label>
               <input
@@ -77,6 +79,10 @@ export default function Career() {
               <input type="file" name="Cv" id="ID" className="py-2" />
             </div>
           </div>
+
+          <button className=" px-8 py-2 rounded text-black shadow-lg bg-primary-color flex flex-row gap-2 justify-center items-center md:mb-0 mb-8 font-bold transition-all duration-150 hover:bg-[#ebebeb]">
+            Submit
+          </button>
         </div>
         <Footer />
       </div>

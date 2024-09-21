@@ -9,9 +9,9 @@ import { Footer } from "../components/footer";
 
 export default function AboutPage() {
   return (
-    <div className="w-full h-fit flex flex-col">
+    <div className="w-full h-fit flex flex-col font-ralewaay">
       <Navbar />
-      <div className="w-full flex-col mt-[100px]">
+      <div className="w-full flex-col mt-[80px]">
         <div className="w-full h-[350px] relative">
           <img className="w-full h-full object-cover" src={AboutImg} alt="" />
           <div className="absolute overlay w-full top-0 h-full  text-white  items-center flex">
@@ -28,7 +28,7 @@ export default function AboutPage() {
                 <CgMoreVertical className="text-secondaryColor" />
               </div>
               <div className="flex w-[90%] md:w-full flex-col md:gap-6 text-start">
-                <p className="flex flex-col gap-4 hover:bg-[#ebebeb] p-5 cursor-pointer transition-all duration-200 hover:shadow-md">
+                <p className="flex flex-col gap-4 hover:bg-[#ebebeb] p-5 cursor-pointer transition-all duration-200 hover:shadow-md text-justify">
                   Blisco Foods and Beverages industries is one of the emerging
                   modernized Food Industry with State of the art Modern
                   Facilities Located in Nnewi, Anambra State, Nigeria. The
@@ -41,7 +41,7 @@ export default function AboutPage() {
                   <h2 className="font-bold text-white bg-secondaryColor w-fit flex flex-row gap-2 items-center px-4">
                     Our History <RxArrowTopRight />
                   </h2>
-                  <p>
+                  <p className="text-justify">
                     Blisco Foods and Beverages Industries was incorporated on
                     the 11th Day of March 2021 with Corporate Affairs Commission
                     (CAC) with registration number BN: 3323792. The products of
@@ -57,7 +57,7 @@ export default function AboutPage() {
                 <h2 className="font-bold text-white bg-secondaryColor w-fit flex flex-row gap-2 items-center px-3">
                   Our management <RxArrowTopRight />
                 </h2>
-                <p>
+                <p className="text-justify">
                   The Management and Staff of Blisco Foods and Beverages
                   Industry are made up of young, energetic, vibrant and
                   dedicated Professionals, with strong background in Food
@@ -75,7 +75,7 @@ export default function AboutPage() {
                 <h2 className="font-bold text-white bg-secondaryColor w-fit flex flex-row gap-2 items-center px-4">
                   Our Impact <RxArrowTopRight />
                 </h2>
-                <p>
+                <p className="text-justify">
                   The Company’s iconic food brand “Blisco” is a household name
                   that is trusted by many for Good quality food products and
                   daily nourishment and enjoyment. Our Products are produced
@@ -119,11 +119,11 @@ export const Emblem = () => {
 
 export const Value = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-10 p-3 md:p-14 bg-[#343434] md:mt-6">
+    <div className="flex flex-col justify-center items-center gap-10 p-3 md:p-14 bg-secondaryColor md:mt-6 ">
       <Emblem />
       <div className="w-[90%] md:w-[80%] flex-col md:flex-row flex gap-8 md:justify-evenly justify-center">
         {/* one value start*/}
-        <div className="w-[330px] md:w-[300px] h-[260px] md:h-[300px] rounded-lg hover:scale-105 duration-200 transition-all flex p-4 flex-col justify-between border border-gray-300">
+        <div className="w-[330px] md:w-[300px] h-[260px] md:h-[300px] rounded duration-200 transition-all flex p-4 flex-col justify-between border border-gray-300">
           <div className="p-4 rounded-full bg-primary-color text-white w-fit">
             <GrTarget size={30} />
           </div>
@@ -137,7 +137,7 @@ export const Value = () => {
         </div>
         {/* one value end*/}
         {/* one value start*/}
-        <div className="w-[330px] md:w-[300px] h-[260px] md:h-[300px] p-4 rounded-lg hover:scale-105 duration-200  flex flex-col justify-between border border-gray-300">
+        <div className="w-[330px] md:w-[300px] h-[260px] md:h-[300px] p-4 rounded duration-200  flex flex-col justify-between border border-gray-300">
           <div className="p-4 rounded-full bg-primary-color text-white w-fit">
             <TbGrowth size={30} />
           </div>
@@ -150,7 +150,7 @@ export const Value = () => {
           </div>
         </div>
         {/* core value */}
-        <div className="w-[330px] md:w-[300px] h-fit md:h-[300px] p-6 text-white rounded-lg hover:scale-105 duration-200 flex flex-col justify-center border border-gray-300">
+        <div className="w-[330px] md:w-[300px] h-fit md:h-[300px] p-6 text-white rounded duration-200 flex flex-col justify-center border border-gray-300">
           <div className="flex flex-col gap-6 cursor-pointer">
             <div className="p-4 rounded-full bg-primary-color text-white w-fit">
               <AiOutlineTransaction size={30} />
@@ -180,38 +180,6 @@ export const Value = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <Newsletter />
-    </div>
-  );
-};
-
-export const Newsletter = () => {
-  return (
-    <div className="w-[90%] md:w-[80%] md:gap-0 gap-4 flex flex-col md:flex-row justify-between md:mb-0 mb-6">
-      <div className="flex flex-col w-full md:w-[60%] text-white gap-4">
-        <h2 className="text-primary-color text-xl">
-          Subscribe to Our Newsletter
-        </h2>
-        <p className="text-sm">
-          To stay up-to-date on all our Promotions and information and stories
-          as they unfold, subscribe to our news service.
-        </p>
-      </div>
-      <div className="flex flex-col gap-4 text-white">
-        <p className="font-bold">Enter your email:</p>
-        <div className="flex flex-row gap-1">
-          <input
-            type="email"
-            name=""
-            id=""
-            placeholder="email"
-            className=" outline-none px-3 py-1 bg-transparent border-gray-100 border w-[250px]"
-          />
-          <button className=" py-1 px-3 bg-[#ebebeb] text-black">
-            Subscribe
-          </button>
         </div>
       </div>
     </div>

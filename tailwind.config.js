@@ -10,7 +10,7 @@ export default {
       },
       colors: {
         "primary-color": "#f58634",
-        secondaryColor: "#8a3031",
+        secondaryColor: "#131b23",
       },
     },
   },

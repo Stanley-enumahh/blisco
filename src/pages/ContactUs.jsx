@@ -5,10 +5,11 @@ import { FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { CiLocationArrow1 } from "react-icons/ci";
 import { Footer } from "../components/footer";
+import { Newsletter } from "../components/Newsletter";
 
 export default function ContactUs() {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col font-ralewaay">
       <Navbar />
       <div className="w-full">
         <div className="h-[370px] relative w-full flex flex-row mt-[80px]">
@@ -29,7 +30,7 @@ export default function ContactUs() {
         <div className="w-full flex flex-col md:flex-row gap-6 pt-[70px] pb-[70px] justify-evenly bg-[#ebebeb] md:h-[380px] h-fit items-center">
           <div className="flex flex-col gap-5 rounded-sm justify-center items-center bg-white w-[330px] md:w-[300px] h-[280px] md:h-[300px] select-none">
             <span>
-              <HiOutlineMailOpen size={85} className="text-primary-color" />
+              <HiOutlineMailOpen className="text-primary-color text-5xl" />
             </span>
             <h2 className="font-bold">Email</h2>
             <p className="flex flex-row font-semibold">bliscofoods@gmail.com</p>
@@ -37,7 +38,7 @@ export default function ContactUs() {
 
           <div className="flex flex-col gap-5 rounded-sm justify-center items-center bg-white w-[330px] md:w-[300px] h-[280px] md:h-[300px] select-none">
             <span>
-              <FaPhone size={85} className="text-primary-color" />
+              <FaPhone className="text-primary-color text-5xl" />
             </span>
             <h2 className="font-bold">Call</h2>
             <div className="flex flex-row font-semibold">
@@ -48,7 +49,7 @@ export default function ContactUs() {
 
           <div className="flex flex-col gap-5 rounded-sm justify-center items-center bg-white w-[330px] md:w-[300px] h-[280px] md:h-[300px] text-center p-4 select-none">
             <span>
-              <FaLocationDot size={85} className="text-primary-color" />
+              <FaLocationDot className="text-primary-color text-5xl" />
             </span>
             <h2 className="font-bold">Address</h2>
             <p className="font-semibold">
@@ -95,6 +96,7 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
+        <Newsletter />
       </div>
       <Footer />
     </div>
