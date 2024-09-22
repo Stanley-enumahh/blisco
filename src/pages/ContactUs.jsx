@@ -66,7 +66,7 @@ export default function ContactUs() {
               <p className="h-[2px] w-[100px] bg-red-600"></p>
               <h1 className="font-bold text-4xl">Send Us a Message</h1>
             </div>
-            <div className="md:w-[50%] w-full flex flex-col gap-4 items-center justify-center">
+            <div className="md:w-[55%] w-full flex flex-col gap-4 items-center justify-center">
               <div className="flex-col gap-4 md:gap-0 md:flex-row flex justify-between w-full">
                 <input
                   type="text"
