@@ -124,7 +124,7 @@ export const Value = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-10 p-3 md:p-14 bg-secondaryColor md:mt-6 ">
       <Emblem />
-      <div className="w-[90%] md:w-[80%] flex-col md:flex-row flex gap-8 md:justify-evenly justify-center">
+      <div className="w-full md:w-[80%] items-center flex-col md:flex-row flex gap-8 md:justify-evenly justify-center">
         {/* one value start*/}
         <div className="w-[330px] md:w-[300px] h-[260px] md:h-[300px] rounded duration-200 transition-all flex p-4 flex-col justify-between border border-gray-300">
           <div className="p-4 rounded-full bg-primary-color text-white w-fit">

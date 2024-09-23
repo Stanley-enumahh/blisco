@@ -29,7 +29,7 @@ export default function ContactUs() {
           </div>
         </div>
 
-        <div className="w-full flex flex-col md:flex-row gap-6 pt-[70px] pb-[70px] justify-center md:justify-evenly bg-[#ebebeb] md:h-[380px] h-fit items-center">
+        <div className="w-full flex flex-col md:flex-row gap-6 pt-[70px] pb-[70px] justify-evenly bg-[#ebebeb] md:h-[380px] h-fit items-center">
           <div className="flex flex-col gap-5 rounded-sm justify-center items-center bg-white w-[330px] md:w-[300px] h-[280px] md:h-[300px] select-none">
             <span>
               <HiOutlineMailOpen className="text-primary-color text-5xl" />
