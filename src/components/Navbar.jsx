@@ -68,12 +68,7 @@ export const Navbar = () => {
             >
               <Link to="/career">Career</Link>
             </li>
-            <li
-              onClick={toggleSidebar}
-              className="md:hover:text-primary-color md:hidden flex px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
-            >
-              <Link to="/">Become a Distributor</Link>
-            </li>
+
             <li
               onClick={toggleSidebar}
               className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
@@ -82,7 +77,7 @@ export const Navbar = () => {
             </li>
             <li
               onClick={toggleSidebar}
-              className="md:hover:text-primary-color md:flex hidden px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
             >
               <Link to="/distributor">Become a distributor</Link>
             </li>
