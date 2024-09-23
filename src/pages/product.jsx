@@ -14,6 +14,7 @@ import BliscoChinChin from "../assets/blisco chin chin.png";
 import BliscoMultiGrain from "../assets/blisco multigrain.png";
 import BliscoCakeBread from "../assets/blisco cake bread.png";
 import { Footer } from "../components/footer";
+import ScrollToTop from "../components/Navbar";
 
 const Details = [
   {
@@ -86,13 +87,14 @@ export default function ProductsDisplay() {
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
-    autoplaySpeed: 500,
+    autoplaySpeed: 2000,
     cssEase: "linear",
   };
 
   return (
     <div className="w-full h-fit items-center flex flex-col">
       <Navbar />
+      <ScrollToTop />
       <div className="w-full flex flex-col mt-[80px]">
         <Intro />
         <div className="w-[100%] h-[500px]  md:h-fit py-[60px] justify-center flex flex-row">
@@ -128,6 +130,7 @@ export function ProductDesign(props) {
           className="h-full w-[80%] md:w-[75%] rotate-0 md:rotate-12 drop-shadow-lg"
         />
       </div>
+      <ScrollToTop />
     </div>
   );
 }

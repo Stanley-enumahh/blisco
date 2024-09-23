@@ -1,9 +1,11 @@
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/footer";
+import ScrollToTop from "../components/Navbar";
 
 export default function Responsibility() {
   return (
     <div className="w-full flex-col flex h-fit font-ralewaay bg-[#fbf9ff]">
+      <ScrollToTop />
       <Navbar />
       <div className="md:mt-[130px] mt-[140px] w-full flex-col flex items-center">
         <div className=" w-[90%] flex flex-col gap-6 mb-8">
@@ -65,6 +67,7 @@ export default function Responsibility() {
         </div>
       </div>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }

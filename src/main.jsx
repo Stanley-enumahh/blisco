@@ -8,6 +8,7 @@ import Career from "./pages/Career.jsx";
 import ProductsDisplay from "./pages/product.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 import Responsibility from "./pages/SocialResponsibilties.jsx";
+import Distributor from "./pages/Distributor.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/responsibility",
     element: <Responsibility />,
+  },
+  {
+    path: "/distributor",
+    element: <Distributor />,
   },
 ]);
 

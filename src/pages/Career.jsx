@@ -1,10 +1,12 @@
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/footer";
 import teamPix from "../assets/adeolu-eletu-E7RLgUjjazc-unsplash.jpg";
+import ScrollToTop from "../components/Navbar";
 
 export default function Career() {
   return (
     <div className="w-full flex justify-center font-ralewaay">
+      <ScrollToTop />
       <Navbar />
       <div className="w-full flex justify-center gap-10 items-center flex-col md:mt-[80px] mt-[70px]">
         <div className="w-full md:text-start text-center justify-center items-center flex flex-col gap-6 ">
@@ -86,6 +88,7 @@ export default function Career() {
         </div>
         <Footer />
       </div>
+      <ScrollToTop />
     </div>
   );
 }

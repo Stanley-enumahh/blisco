@@ -3,6 +3,8 @@ import Logo from "../assets/LOGO.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export const Navbar = () => {
   const [sidebar, setsidebar] = useState(false);
@@ -49,25 +51,9 @@ export const Navbar = () => {
             </li>
 
             <li className="md:hover:text-primary-color flex-col flex gap-5 px-2 py-1 rounded-sm transition-all duration-150  md:text-black text-white text-lg md:text-sm">
-              <div className="flex flex-row gap-3 justify-between items-center duration-150 transition-all">
-                <Link onClick={toggleSidebar} to="/about">
-                  About Us
-                </Link>
-                <IoIosArrowDown
-                  size={20}
-                  className="flex md:hidden"
-                  onClick={toggleDropdown}
-                />
-              </div>
-              <span
-                className={`flex  shadow-md md:hidden md:bg-[#fbf9ff] py-2 transition-all duration-150 pl-5 ${
-                  dropDown ? "flex" : "hidden"
-                } `}
-              >
-                <Link onClick={toggleSidebar} to="/responsibility">
-                  Social responsibility
-                </Link>
-              </span>
+              <Link onClick={toggleSidebar} to="/about">
+                About Us
+              </Link>
             </li>
 
             <li
@@ -98,6 +84,12 @@ export const Navbar = () => {
               onClick={toggleSidebar}
               className="md:hover:text-primary-color md:flex hidden px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
             >
+              <Link to="/distributor">Become a distributor</Link>
+            </li>
+            <li
+              onClick={toggleSidebar}
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
+            >
               <Link to="/responsibility">Social responsibility</Link>
             </li>
           </ul>
@@ -109,3 +101,15 @@ export const Navbar = () => {
     </div>
   );
 };
+
+export const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page
+  }, [pathname]);
+
+  return null;
+};
+
+export default ScrollToTop;

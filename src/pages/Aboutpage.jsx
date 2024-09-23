@@ -6,10 +6,12 @@ import { GrTarget } from "react-icons/gr";
 import { TbGrowth } from "react-icons/tb";
 import { AiOutlineTransaction } from "react-icons/ai";
 import { Footer } from "../components/footer";
+import ScrollToTop from "../components/Navbar";
 
 export default function AboutPage() {
   return (
     <div className="w-full h-fit flex flex-col font-ralewaay">
+      <ScrollToTop />
       <Navbar />
       <div className="w-full flex-col mt-[80px]">
         <div className="w-full h-[350px] relative">
@@ -102,6 +104,7 @@ export default function AboutPage() {
       </div>
 
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
