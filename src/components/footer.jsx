@@ -7,16 +7,16 @@ export const Footer = () => {
     <div className="md:h-[470px] h-fit w-full flex flex-col bg-[#131b23] text-white justify-between md:p-8 pt-6 md:pt-16 items-center font-ralewaay">
       <div className="md:w-[100%] w-[90%] md:gap-0 gap-7 flex-col h-fit flex md:flex-row justify-evenly ">
         <div className=" flex flex-col gap-1">
-          <div className="p-3 w-[140px] h-[140px] ">
+          <div className="p-3 w-[120px] md:w-[140px] h-[120px] md:h-[140px] ">
             <img src={Logo} className="w-[100%] h-[80%]" alt="Blisco" />
           </div>
-          <h2 className="font-bold text-2xl">
+          <h2 className="font-bold text-xl md:text-2xl">
             BLISCO FOODS & <br /> BEVERAGES INDUSTRIES
           </h2>
         </div>
         {/* contact */}
         <div className="flex flex-col gap-2">
-          <h2 className="font-bold mb-3 text-2xl">Location</h2>
+          <h2 className="font-bold mb-3 text-xl md:text-2xl">Location</h2>
           <p className="text-sm">
             No. 7 Ezigbo Street, Behind Old NEPA Of fice
           </p>
@@ -29,16 +29,20 @@ export const Footer = () => {
 
         {/* star Products */}
         <div className="flex flex-col text-sm gap-2">
-          <h2 className="font-bold mb-3 text-2xl">Star products</h2>
+          <h2 className="font-bold mb-3 text-xl md:text-2xl">Star products</h2>
           <p>Blisco classic gold bread</p>
           <p>Blisco jumbo bread</p>
           <p>Blisco cake bread</p>
         </div>
 
         <div className="flex flex-col text-xl gap-2">
-          <h1 className="font-bold text-2xl">Follow Us</h1>
+          <h1 className="font-bold text-xl md:text-2xl">Follow Us</h1>
           <div className="flex flex-row gap-4 mt-4">
-            <FaFacebookF className="cursor-pointer hover:-translate-y-2 transition-all duration-150" />
+            <a href="https://www.facebook.com/share/tcydGZGojYe44Fyy/?mibextid=qi2Omg">
+              {" "}
+              <FaFacebookF className="cursor-pointer hover:-translate-y-2 transition-all duration-150" />
+            </a>
+
             <IoLogoWhatsapp className="cursor-pointer hover:-translate-y-2 transition-all duration-150" />
             <FaTwitter className="cursor-pointer hover:-translate-y-2 transition-all duration-150" />
           </div>
@@ -53,8 +57,9 @@ export const Footer = () => {
 
 const Copyright = () => {
   return (
-    <p className="text-xs">
-      All rights reserved &copy; {new Date().getFullYear()} | Designed by
+    <p className="text-xs text-center">
+      All rights reserved &copy; {new Date().getFullYear()} | BliscoFoods LTD |
+      Designed by
       <a href="#"> ALPHAGFXS</a>
     </p>
   );

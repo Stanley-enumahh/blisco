@@ -98,10 +98,28 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
+        <LiveMap />
         <Newsletter />
       </div>
       <Footer />
+
       <ScrollToTop />
     </div>
   );
 }
+
+export const LiveMap = () => {
+  return (
+    <div className="w-full flex justify-center">
+      <div className="w-[90%] md:w-[80%] rounded drop-shadow-xl h-full flex justify-center my-12 items-center">
+        <iframe
+          className="h-[350px] md:h-[400px] w-full"
+          scrolling="no"
+          src="https://maps.google.com/maps?width=520&amp;height=500&amp;hl=en&amp;q=No.%207%20Ezigbo%20Street,%20Behind%20Old%20NEPA%20Of%20fice%20%20Nnobi%20Road%20Nnewi,%20Nnewi%20North%20L.G.A%20%20Anambra%20State,%20Nigeria+(BLISCO%20FOODS%20&amp;%20BEVERAGES%20INDUSTRIES)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        >
+          <a href="https://www.gps.ie/">gps devices</a>
+        </iframe>
+      </div>
+    </div>
+  );
+};

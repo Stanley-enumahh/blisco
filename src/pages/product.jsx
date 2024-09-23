@@ -92,15 +92,15 @@ export default function ProductsDisplay() {
   };
 
   return (
-    <div className="w-full h-fit items-center flex flex-col">
+    <div className="w-full h-fit items-center flex flex-col font-ralewaay">
       <Navbar />
       <ScrollToTop />
       <div className="w-full flex flex-col mt-[80px]">
         <Intro />
-        <div className="w-[100%] h-[500px]  md:h-fit py-[60px] justify-center flex flex-row">
+        <div className="w-[100%] h-fit  md:h-fit py-[60px] justify-center flex flex-row">
           <Slider
             {...settings}
-            className="md:w-[70%] w-[90%] md:mb-0 mb-[80px] h-[620px] md:h-full cursor-pointer"
+            className="md:w-[70%] w-[90%] md:mb-0 mb-[20px] h-[620px] md:h-full cursor-pointer"
           >
             {Details.map((Design, index) => {
               return <ProductDesign Data={Design} key={index} />;
