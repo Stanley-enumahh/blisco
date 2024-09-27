@@ -45,12 +45,12 @@ export const Navbar = () => {
             </ul>
             <li
               onClick={toggleSidebar}
-              className="md:hover:text-primary-color px-2 py-1 md:mt-0 mt-4 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
+              className="md:hover:text-primary-color px-2 py-1 md:mt-0 mt-4 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm lg:hidden"
             >
               <Link to="/">Home</Link>
             </li>
 
-            <li className="md:hover:text-primary-color flex-col flex gap-5 px-2 py-1 rounded-sm transition-all duration-150  md:text-black text-white text-lg md:text-sm">
+            <li className="md:hover:text-primary-color flex-col flex gap-5 px-2 py-1 rounded-sm transition-all duration-150  md:text-black text-white text-lg md:text-sm lg:hidden">
               <Link onClick={toggleSidebar} to="/about">
                 About Us
               </Link>
@@ -89,7 +89,10 @@ export const Navbar = () => {
             </li>
           </ul>
         </nav>
-        <div onClick={toggleSidebar} className="text-2xl md:hidden flex">
+        <div
+          onClick={toggleSidebar}
+          className="text-2xl md:hidden flex lg:flex"
+        >
           <RxHamburgerMenu />
         </div>
       </div>
