@@ -37,7 +37,7 @@ export const Navbar = () => {
                 <div className="w-fit h-[90px] md:hidden mt-4 overflow-hidden flex justify-center items-center">
                   <img
                     src={Logo}
-                    className="md:w-full w-[60px] cursor-pointer md:h-full h-[60px] object-cover drop-shadow-lg"
+                    className="md:w-full w-[60px] cursor-pointer md:h-full h-[60px] object-cover drop-shadow-lg md:flex sm:w-full sm:h-[80px]"
                     alt="Blisco"
                   />
                 </div>
@@ -45,12 +45,12 @@ export const Navbar = () => {
             </ul>
             <li
               onClick={toggleSidebar}
-              className="md:hover:text-primary-color px-2 py-1 md:mt-0 mt-4 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm sm:hidden"
+              className="md:hover:text-primary-color px-2 py-1 md:mt-0 mt-4 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm sm:hidden md:flex"
             >
               <Link to="/">Home</Link>
             </li>
 
-            <li className="md:hover:text-primary-color flex-col flex gap-5 px-2 py-1 rounded-sm transition-all duration-150  md:text-black text-white text-lg md:text-sm sm:hidden">
+            <li className="md:hover:text-primary-color flex-col flex gap-5 px-2 py-1 rounded-sm transition-all duration-150  md:text-black text-white text-lg md:text-sm sm:hidden md:flex">
               <Link onClick={toggleSidebar} to="/about">
                 About Us
               </Link>
@@ -58,32 +58,32 @@ export const Navbar = () => {
 
             <li
               onClick={toggleSidebar}
-              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm sm:hidden"
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm sm:hidden md:flex"
             >
               <Link to="/product">Our Products</Link>
             </li>
             <li
               onClick={toggleSidebar}
-              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm sm:hidden"
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm sm:hidden md:flex"
             >
               <Link to="/career">Career</Link>
             </li>
 
             <li
               onClick={toggleSidebar}
-              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm sm:hidden"
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm sm:hidden md:flex"
             >
               <Link to="/contactUs">Contact Us</Link>
             </li>
             <li
               onClick={toggleSidebar}
-              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm sm:hidden"
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm sm:hidden md:flex"
             >
               <Link to="/distributor">Become a distributor</Link>
             </li>
             <li
               onClick={toggleSidebar}
-              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm sm:hidden"
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm sm:hidden md:flex"
             >
               <Link to="/responsibility">Social responsibility</Link>
             </li>
@@ -91,7 +91,7 @@ export const Navbar = () => {
         </nav>
         <div
           onClick={toggleSidebar}
-          className="text-2xl md:hidden flex sm:flex"
+          className="sm:text-4xl text-2xl md:hidden flex sm:flex"
         >
           <RxHamburgerMenu />
         </div>
