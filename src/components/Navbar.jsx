@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/LOGO.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
-import { IoIosArrowDown } from "react-icons/io";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -14,7 +13,7 @@ export const Navbar = () => {
 
   return (
     <div className="flex w-full h-fit justify-center py-2 z-50 bg-[#fbf9ff] fixed font-ralewaay">
-      <div className="w-[90%] h-fit flex flex-row justify-between items-center">
+      <div className="w-[90%] lg:w-[95%] h-fit flex flex-row justify-between items-center">
         <div className="w-fit h-[70px] p-2 overflow-hidden flex justify-center items-center">
           <img
             src={Logo}
@@ -24,7 +23,7 @@ export const Navbar = () => {
         </div>
         <nav className="flex z-50">
           <ul
-            className={`flex md:flex-row md:w-fit w-[70%] flex-col gap-5 top-0 text-sm md:static absolute transition-all duration-500 md:h-fit h-screen md:bg-transparent md:font-bold font-normal bg-primary-color z-50 lg:pl-20 md:pl-0 px-4 md:pt-0 md:shadow-none shadow-xl select-none
+            className={`flex md:flex-row md:w-fit w-[70%] flex-col md:gap-3 gap-5 top-0 text-sm md:static absolute transition-all duration-500 md:h-fit h-screen md:bg-transparent md:font-bold font-normal bg-primary-color z-50 lg:pl-20 md:pl-0 px-4 md:pt-0 md:shadow-none shadow-xl select-none
                ${sidebar ? "left-[0]" : "left-[-100%]"}`}
           >
             <ul className="flex flex-row justify-between md:hidden items-center w-full ">
