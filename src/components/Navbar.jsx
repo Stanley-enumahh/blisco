@@ -58,32 +58,32 @@ export const Navbar = () => {
 
             <li
               onClick={toggleSidebar}
-              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm sm:hidden"
             >
               <Link to="/product">Our Products</Link>
             </li>
             <li
               onClick={toggleSidebar}
-              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm sm:hidden"
             >
               <Link to="/career">Career</Link>
             </li>
 
             <li
               onClick={toggleSidebar}
-              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm sm:hidden"
             >
               <Link to="/contactUs">Contact Us</Link>
             </li>
             <li
               onClick={toggleSidebar}
-              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm sm:hidden"
             >
               <Link to="/distributor">Become a distributor</Link>
             </li>
             <li
               onClick={toggleSidebar}
-              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm"
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm sm:hidden"
             >
               <Link to="/responsibility">Social responsibility</Link>
             </li>
@@ -91,7 +91,7 @@ export const Navbar = () => {
         </nav>
         <div
           onClick={toggleSidebar}
-          className="text-2xl md:hidden flex lg:flex"
+          className="text-2xl md:hidden flex sm:flex"
         >
           <RxHamburgerMenu />
         </div>
