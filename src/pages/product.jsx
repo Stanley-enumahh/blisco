@@ -86,21 +86,21 @@ export default function ProductsDisplay() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
+    speed: 5000,
     autoplaySpeed: 2000,
     cssEase: "linear",
   };
 
   return (
-    <div className="w-full h-fit items-center flex flex-col font-ralewaay">
+    <div className="w-full bg-[#f2c14e] h-fit items-center flex flex-col font-ralewaay">
       <Navbar />
       <ScrollToTop />
-      <div className="w-full flex flex-col mt-[80px]">
+      <div className="w-full flex flex-col mt-[80px] justify-center items-center">
         <Intro />
-        <div className="w-[100%] h-fit  md:h-fit py-[60px] justify-center flex flex-row">
+        <div className="w-full md:w-[90%] h-[700px]  md:h-fit justify-center flex flex-row">
           <Slider
             {...settings}
-            className="md:w-[70%] w-[90%] md:mb-0 mb-[20px] h-[620px] md:h-full cursor-pointer"
+            className="md:w-full w-full md:my-[40px] mb-[20px] h-[620px] md:h-fit  cursor-pointer my-11"
           >
             {Details.map((Design, index) => {
               return <ProductDesign Data={Design} key={index} />;
@@ -116,24 +116,23 @@ export default function ProductsDisplay() {
 export function ProductDesign(props) {
   const { image, title, info, weight } = props.Data;
   return (
-    <div className="flex flex-col md:flex-row justify-between w-full items-center h-[600px] md:h-full gap-0 md:gap-4 bg-secondaryColor p-5 rounded-lg shadow md:mb-[50px]">
-      <div className="w-full md:w-[45%] h-full flex flex-col justify-center gap-3">
-        <p className="text-neutral-200 text-xs">{weight}</p>
-        <h1 className="font-bold text-xl md:text-3xl text-neutral-200">
-          {title}
-        </h1>
-        <p className="text-neutral-200 text-justify">{info}</p>
+    <div className="flex flex-col md:flex-row justify-between w-full items-center h-full md:h-full gap-0 md:gap-10 rounded-lg px-4 md:px-12">
+      <div className="w-full md:w-[45%] h-fit flex flex-col justify-center gap-3">
+        <h1 className="font-bold text-xl md:text-3xl">{title}</h1>
+        <p className=" text-justify">{info}</p>
+        <p className="text-xs">{weight}</p>
       </div>
-      <div className="h-[300px] md:h-[400px] w-full md:w-[60%] flex justify-center">
-        <img
-          src={image}
-          className="h-full w-[80%] md:w-[75%] rotate-0 md:rotate-12 drop-shadow-lg"
-        />
-      </div>
+
+      <img
+        src={image}
+        className="h-fit w-[80%] md:w-[85%] md:h-[450px] drop-shadow-lg object-contain"
+      />
+
       <ScrollToTop />
     </div>
   );
 }
+<div className="h-[300px] border-4 md:h-[500px] w-full md:w-[60%] flex justify-center items-center"></div>;
 
 const Intro = () => {
   return (

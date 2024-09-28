@@ -4,7 +4,7 @@ import { RxArrowTopRight } from "react-icons/rx";
 
 export const HeroAbout = () => {
   return (
-    <div className="w-full flex justify-center h-fit md:h-[550px] pt-[60px] bg-[#fbf9ff] ">
+    <div className="w-full flex relative justify-center h-fit md:h-[550px] pt-[60px] bg-[#fbf9ff] ">
       <div className="md:w-[85%] w-[90%] h-[80%] flex flex-col md:flex-row justify-between items-center">
         <div className="h-full w-full md:w-[40%]">
           <div className="flex flex-col gap-7">
@@ -36,7 +36,8 @@ export const HeroAbout = () => {
             </div>
           </div>{" "}
         </div>
-        <div className="h-[400px] md:mb-0 mb-[40px] md:h-full w-full md:w-[45%] border-r-[5px] border-b-[8px] border-primary-color shadow-lg p-4">
+        <div className="bg-primary-color shadow-md md:rounded-br-3xl z-0 w-[50%] md:w-[20%] h-[20%] md:h-[50%] absolute bottom-0 md:bottom-[50px] right-0 md:right-[50px]"></div>
+        <div className="h-[400px] z-10 md:mb-0 mb-[40px] md:h-full w-full md:w-[45%] border-r-[5px] border-b-[8px] border-secondaryColor shadow-lg p-4">
           <img
             src={AboutImage}
             alt="About Image"
