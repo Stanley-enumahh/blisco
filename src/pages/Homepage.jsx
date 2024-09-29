@@ -8,7 +8,7 @@ import MiniProduct from "../components/Hero1";
 
 export default function Homepage() {
   return (
-    <>
+    <div className="w-full overflow-hidden">
       <ScrollToTop />
       <div className=" flex flex-col h-fit w-full font-ralewaay">
         <Navbar />
@@ -19,6 +19,6 @@ export default function Homepage() {
         <Footer />
       </div>
       <ScrollToTop />
-    </>
+    </div>
   );
 }
