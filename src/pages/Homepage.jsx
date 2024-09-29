@@ -4,6 +4,7 @@ import { Hero1 } from "../components/Hero1";
 import { Footer } from "../components/footer";
 import ScrollToTop from "../components/Navbar";
 import { HeroAbout } from "../components/HeroAbout";
+import MiniProduct from "../components/Hero1";
 
 export default function Homepage() {
   return (
@@ -14,6 +15,7 @@ export default function Homepage() {
         <Hero1 />
         <HeroAbout />
         {/* <Hero2 /> */}
+        <MiniProduct />
         <Footer />
       </div>
       <ScrollToTop />

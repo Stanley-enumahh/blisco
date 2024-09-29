@@ -18,7 +18,9 @@ export default function ContactUs() {
           <div className="w-full md:w-[50%] md:static absolute h-full flex flex-col gap-4 justify-center items-center md:text-black text-white select-none">
             <p>Contact</p>
             <p className="h-[2px] w-[100px] bg-red-600"></p>
-            <h1 className="text-4xl font-bold">Get In Touch With Us</h1>
+            <h1 className="text-4xl font-bold drop-shadow-md md:drop-shadow-none">
+              Get In Touch With Us
+            </h1>
           </div>
           <div className="w-full md:w-[50%]">
             <img

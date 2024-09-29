@@ -7,17 +7,16 @@ export default function Responsibility() {
     <div className="w-full flex-col flex h-fit font-ralewaay bg-[#fbf9ff]">
       <ScrollToTop />
       <Navbar />
-      <div className="md:mt-[130px] mt-[140px] w-full flex-col flex items-center">
-        <div className=" w-[90%] flex flex-col gap-6 mb-8">
-          <div className="flex flex-col gap-4 h-[100px] md:h-[200px]">
-            <p className="text-red-600 font-semibold">responsibility/</p>
+      <div className="md:mt-[130px] mt-[120px] w-full flex-col flex items-center">
+        <div className=" w-[90%] flex flex-col gap-8 mb-8">
+          <div className="h-[100px] md:h-[200px] bg-primary-color justify-center items-center flex rounded-lg shadow-lg">
             <h1 className="text-2xl md:text-4xl font-bold">
               SOCIAL RESPONSIBILITY
             </h1>
           </div>
           <div className="flex flex-col md:flex-row gap-4 justify-between h-fit md:h-[200px]">
             <div className="h-full w-full md:w-[50%] flex flex-col md:flex-row gap-2 md:items-center bg-[#ebebeb] rounded p-4">
-              <h1 className="text-lg md:text-2xl font-bold">
+              <h1 className="text-lg md:text-2xl font-bold text-nowrap">
                 CO-OPERATE SOCIAL RESPONSIBILITY
               </h1>
               <p className="h-[2px] w-[60px] md:w-[100px] bg-red-600"></p>

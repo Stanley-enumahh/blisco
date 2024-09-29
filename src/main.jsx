@@ -9,6 +9,7 @@ import ProductsDisplay from "./pages/product.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 import Responsibility from "./pages/SocialResponsibilties.jsx";
 import Distributor from "./pages/Distributor.jsx";
+import Gallery from "./pages/Gallery.jsx";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: "/distributor",
     element: <Distributor />,
+  },
+  {
+    path: "/gallery",
+    element: <Gallery />,
   },
 ]);
 

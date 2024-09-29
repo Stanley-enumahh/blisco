@@ -82,6 +82,12 @@ export const Navbar = () => {
             >
               <Link to="/responsibility">Social responsibility</Link>
             </li>
+            <li
+              onClick={toggleSidebar}
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm md:flex text-nowrap"
+            >
+              <Link to="/gallery">Gallery</Link>
+            </li>
           </ul>
         </nav>
         <div onClick={toggleSidebar} className=" text-2xl md:hidden flex">

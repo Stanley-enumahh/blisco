@@ -1,20 +1,20 @@
 import { Navbar } from "../components/Navbar";
-import Teachocomilk from "../assets/blisco tea-choco.png";
-import BliscoBreadCake from "../assets/blisco cake bread.png";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import BliscoBreadCake from "../assets/blisco3.png";
 import products from "../assets/IMG_20231106_171541_880@-1909798223.jpg";
-import BliscoClissicgold from "../assets/blisco classic gold.png";
-import Bliscoroundbread from "../assets/blisco round bread.png";
-import BliscoCoconutBread from "../assets/blisco coconut bread.png";
-import BliscoJumbBread from "../assets/blisco jumbo bread.png";
-import BliscoPeanut from "../assets/blisco peanut.png";
-import BliscoChinChin from "../assets/blisco chin chin.png";
-import BliscoMultiGrain from "../assets/blisco multigrain.png";
-import BliscoCakeBread from "../assets/blisco cake bread.png";
+import BliscoClissicgold from "../assets/blisco8.png";
+import Bliscoroundbread from "../assets/blisco4.png";
+import BliscoCoconutBread from "../assets/blisco7.png";
+import BliscoJumbBread from "../assets/blisco6.png";
+import BliscoPeanut from "../assets/blisco10.png";
+import BliscoChinChin from "../assets/blisco9.png";
+import BliscoMultiGrain from "../assets/blisco5.png";
+import BliscoCakeBread from "../assets/blisco3.png";
 import { Footer } from "../components/footer";
 import ScrollToTop from "../components/Navbar";
+import blisco1 from "../assets/blisco1.png";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Details = [
   {
@@ -24,7 +24,7 @@ const Details = [
     weight: "Net Weight is 1.2kg",
   },
   {
-    image: Teachocomilk,
+    image: blisco1,
     title: "TEA-CHOCO-MILK",
     info: "If you have unique taste for chocolate this product is for you.Blisco Tea-Choco-Milk Bread is a unique recipe for Lovers of Chocolate . It is made with 100% Chocolate, Cocoa Powder and Tea, and Milk. Every bite gives you that Chocolate experience. It is Soft, Fresh and Tasty. ",
     weight: "Net Weight is 600g",
@@ -81,34 +81,35 @@ const Details = [
 
 export default function ProductsDisplay() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 2000,
+    speed: 1000,
+    autoplaySpeed: 5000,
     cssEase: "linear",
   };
-
   return (
-    <div className="w-full bg-[#f2c14e] h-fit items-center flex flex-col font-ralewaay">
+    <div className="w-full overflow-hidden h-fit items-center flex flex-col font-ralewaay product-main">
       <Navbar />
       <ScrollToTop />
       <div className="w-full flex flex-col mt-[80px] justify-center items-center">
         <Intro />
-        <div className="w-full md:w-[90%] h-[700px]  md:h-fit justify-center flex flex-row">
-          <Slider
-            {...settings}
-            className="md:w-full w-full md:my-[40px] mb-[20px] h-[620px] md:h-fit  cursor-pointer my-11"
-          >
-            {Details.map((Design, index) => {
-              return <ProductDesign Data={Design} key={index} />;
-            })}
-          </Slider>
+        <div className="w-full relative md:w-[90%] flex flex-row">
+          <p className="w-[200px] md:flex hidden top-[270px] h-[200px] bg-primary-color rounded-full absolute shadow-xl"></p>
+          <p className="w-[100px] top-[400px] md:flex hidden  left-[240px] h-[100px] bg-[#f2c14e] rounded-full absolute shadow-xl"></p>
+          <div className="h-full w-full my-10">
+            <Slider {...settings}>
+              {Details.map((item, index) => {
+                return <ProductDesign key={index} Data={item} />;
+              })}
+            </Slider>
+          </div>
         </div>
+        <Footer />
+        <ScrollToTop />
       </div>
-      <Footer />
     </div>
   );
 }
@@ -116,23 +117,25 @@ export default function ProductsDisplay() {
 export function ProductDesign(props) {
   const { image, title, info, weight } = props.Data;
   return (
-    <div className="flex flex-col md:flex-row justify-between w-full items-center h-full md:h-full gap-0 md:gap-10 rounded-lg px-4 md:px-12">
-      <div className="w-full md:w-[45%] h-fit flex flex-col justify-center gap-3">
-        <h1 className="font-bold text-xl md:text-3xl">{title}</h1>
+    <div className="flex flex-col md:gap-0 gap-10 md:flex-row justify-between w-full items-center h-fit md:h-full rounded-lg px-4 md:px-12 md:mb-6">
+      <div className="w-full md:w-[45%] h-fit flex flex-col justify-center gap-3 ">
+        <h1 className="font-bold text-xl md:text-3xl drop-shadow-lg">
+          {title}
+        </h1>
         <p className=" text-justify">{info}</p>
         <p className="text-xs">{weight}</p>
       </div>
-
-      <img
-        src={image}
-        className="h-fit w-[80%] md:w-[85%] md:h-[450px] drop-shadow-lg object-contain"
-      />
+      <div className="w-full shadow-2xl md:w-[45%] h-fit md:h-[450px] border-4 flex justify-center items-center bg-[#f2c14e] rounded-2xl border-neutral-400 md:mb-0 ">
+        <img
+          src={image}
+          className="h-[60%] w-[60%] md:w-[60%] md:h-full drop-shadow-lg object-fill"
+        />
+      </div>
 
       <ScrollToTop />
     </div>
   );
 }
-<div className="h-[300px] border-4 md:h-[500px] w-full md:w-[60%] flex justify-center items-center"></div>;
 
 const Intro = () => {
   return (
@@ -149,12 +152,12 @@ const Intro = () => {
             Where Every Bite Feels Like Home!
           </h1>
           <p className="text-justify">
-            At BliscoFoods, we believe that the best moments in life are savored
-            with a delicious treat in hand. Blisco Foods and Beverages Products
-            are produced with Selection of Best Quality Food Grade Ingredients
-            and Raw materials approved by NAFDAC to give you soft, fresh and
-            Delicious quality Products that are health and good for your family
-            Enjoyment
+            At Blisco Foods, we believe that the best moments in life are
+            savored with a delicious treat in hand. Blisco Foods and Beverages
+            Products are produced with Selection of Best Quality Food Grade
+            Ingredients and Raw materials approved by NAFDAC to give you soft,
+            fresh and Delicious quality Products that are health and good for
+            your family Enjoyment
           </p>
         </div>
       </div>

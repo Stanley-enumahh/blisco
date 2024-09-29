@@ -2,6 +2,7 @@ import Logo from "../assets/LOGO.png";
 import { FaFacebookF } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaTwitter } from "react-icons/fa";
+import QualityMark from "../assets/quality cert.png";
 export const Footer = () => {
   return (
     <div className="md:h-[470px] h-fit w-full flex flex-col bg-[#131b23] text-white justify-between md:p-8 pt-6 md:pt-16 items-center font-ralewaay">
@@ -28,11 +29,22 @@ export const Footer = () => {
         </div>
 
         {/* star Products */}
-        <div className="flex flex-col text-sm gap-2">
-          <h2 className="font-bold mb-3 text-xl md:text-2xl">Star products</h2>
-          <p>Blisco classic gold bread</p>
-          <p>Blisco jumbo bread</p>
-          <p>Blisco cake bread</p>
+        <div className="flex flex-row md:w-fit w-full md:justify-normal justify-between md:flex-col text-sm gap-4">
+          <div className="flex flex-col gap-3">
+            <h2 className="font-bold mb-3 text-xl md:text-2xl">
+              Star products
+            </h2>
+            <p className="font-bold">Blisco classic gold bread</p>
+            <p className="font-bold">Blisco jumbo bread</p>
+            <p className="font-bold">Blisco cake bread</p>
+          </div>
+          <div className="w-fit flex justify-center items-center h-fit">
+            <img
+              src={QualityMark}
+              alt=""
+              className="w-[120px] h-[120px] object-contain"
+            />
+          </div>
         </div>
 
         <div className="flex flex-col text-xl gap-2">
@@ -58,9 +70,12 @@ export const Footer = () => {
 const Copyright = () => {
   return (
     <p className="text-xs text-center">
-      All rights reserved &copy; {new Date().getFullYear()} | BliscoFoods LTD |
-      Designed by
-      <a href="#"> ALPHAGFXS</a>
+      All rights reserved &copy; {new Date().getFullYear()} | BliscoFoods LTD{" "}
+      <br />
+      <p className="text-neutral-500">
+        Designed by
+        <a href="#"> ALPHAGFXS</a>
+      </p>
     </p>
   );
 };
