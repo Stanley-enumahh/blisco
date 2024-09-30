@@ -25,7 +25,7 @@ export const Newproduct = () => {
     <div className="w-full flex justify-center items-center newproduct-container h-fit">
       <div className="w-[90%] flex flex-col md:flex-row justify-between my-2 md:my-12">
         <div className="flex flex-col py-10 w-full md:w-[40%] gap-6">
-          <div className="flex flex-col gap-3 bg-red-200 md:items-start items-center">
+          <div className="flex flex-col gap-3 md:items-start items-center">
             <h1 className="text-3xl font-bold">
               New <span className="text-3xl md:text-4xl">Products</span>
             </h1>
