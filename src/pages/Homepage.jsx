@@ -5,6 +5,7 @@ import { Footer } from "../components/footer";
 import ScrollToTop from "../components/Navbar";
 import { HeroAbout } from "../components/HeroAbout";
 import MiniProduct from "../components/Hero1";
+import { Newproduct } from "../components/Newproducts";
 
 export default function Homepage() {
   return (
@@ -13,6 +14,7 @@ export default function Homepage() {
       <div className=" flex flex-col h-fit w-full font-ralewaay">
         <Navbar />
         <Hero1 />
+        <Newproduct />
         <HeroAbout />
         {/* <Hero2 /> */}
         <MiniProduct />

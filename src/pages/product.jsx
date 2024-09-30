@@ -12,9 +12,7 @@ import BliscoCakeBread from "../assets/blisco3.png";
 import { Footer } from "../components/footer";
 import ScrollToTop from "../components/Navbar";
 import blisco1 from "../assets/blisco1.png";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Carousel } from "antd";
 
 const Details = [
   {
@@ -80,15 +78,20 @@ const Details = [
 ];
 
 export default function ProductsDisplay() {
-  const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 5000,
-    cssEase: "linear",
+  // const settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   speed: 1000,
+  //   autoplaySpeed: 5000,
+  //   cssEase: "linear",
+  // };
+  const contentStyle = {
+    height: "100%",
+    textAlign: "start",
+    background: "transparent",
   };
   return (
     <div className="w-full overflow-hidden h-fit items-center flex flex-col font-ralewaay product-main">
@@ -100,11 +103,17 @@ export default function ProductsDisplay() {
           <p className="w-[200px] md:flex hidden top-[270px] h-[200px] bg-primary-color rounded-full absolute shadow-xl"></p>
           <p className="w-[100px] top-[400px] md:flex hidden  left-[240px] h-[100px] bg-[#f2c14e] rounded-full absolute shadow-xl"></p>
           <div className="h-full w-full my-10">
-            <Slider {...settings}>
+            <Carousel
+              draggable={true}
+              arrows={false}
+              dots={false}
+              autoplay
+              style={contentStyle}
+            >
               {Details.map((item, index) => {
                 return <ProductDesign key={index} Data={item} />;
               })}
-            </Slider>
+            </Carousel>
           </div>
         </div>
         <Footer />
@@ -117,12 +126,12 @@ export default function ProductsDisplay() {
 export function ProductDesign(props) {
   const { image, title, info, weight } = props.Data;
   return (
-    <div className="flex flex-col md:gap-0 gap-10 md:flex-row justify-between w-full items-center h-fit md:h-full rounded-lg px-4 md:px-12 md:mb-6">
+    <div className="flex flex-col md:gap-0 gap-10 cursor-pointer md:flex-row justify-between w-full items-center h-fit md:h-full rounded-lg px-4 md:px-12 md:mb-6">
       <div className="w-full md:w-[45%] h-fit flex flex-col justify-center gap-3 ">
         <h1 className="font-bold text-xl md:text-3xl drop-shadow-lg">
           {title}
         </h1>
-        <p className=" text-justify">{info}</p>
+        <p className=" text-justify text-lg">{info}</p>
         <p className="text-xs">{weight}</p>
       </div>
       <div className="w-full shadow-2xl md:w-[45%] h-fit md:h-[450px] border-4 flex justify-center items-center bg-[#f2c14e] rounded-2xl border-neutral-400 md:mb-0 ">

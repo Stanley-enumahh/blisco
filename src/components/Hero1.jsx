@@ -17,7 +17,7 @@ import "slick-carousel/slick/slick-theme.css";
 export const Hero1 = () => {
   return (
     <>
-      <div className="z-0 flex flex-col h-fit md:h-screen w-full ">
+      <div className="z-0 flex flex-col h-fit md:h-fit w-full bg-[#f6f9ff]">
         <div className="md:h-full h-fit flex justify-center items-center w-full">
           <img
             src={HeroImage1}
