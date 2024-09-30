@@ -25,9 +25,9 @@ export const Newproduct = () => {
     <div className="w-full flex justify-center items-center newproduct-container h-fit">
       <div className="w-[90%] flex flex-col md:flex-row justify-between my-2 md:my-12">
         <div className="flex flex-col py-10 w-full md:w-[40%] gap-6">
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 bg-red-200 md:items-start items-center">
             <h1 className="text-3xl font-bold">
-              New <span className="text-4xl">Products</span>
+              New <span className="text-3xl md:text-4xl">Products</span>
             </h1>
             <p className="h-[2px] w-[100px] bg-red-600"></p>
           </div>
@@ -45,7 +45,7 @@ export const Newproduct = () => {
             dots={false}
             autoplay
             style={contentStyle}
-            fade={true}
+            fade={false}
           >
             {Details.map((item, index) => {
               return <NewproductDesign key={index} Data={item} />;
