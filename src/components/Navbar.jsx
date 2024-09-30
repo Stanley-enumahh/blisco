@@ -4,6 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { Popover } from "antd";
 
 export const Navbar = () => {
   const [sidebar, setsidebar] = useState(false);
@@ -23,7 +24,7 @@ export const Navbar = () => {
         </div>
         <nav className="flex z-50">
           <ul
-            className={`flex md:flex-row md:w-fit w-[70%] flex-col md:gap-3 gap-5 top-0 text-sm md:static absolute transition-all duration-500 md:h-fit h-screen md:bg-transparent md:font-bold font-normal bg-primary-color z-50 lg:pl-20 md:pl-0 px-4 md:pt-0 md:shadow-none shadow-xl select-none
+            className={`flex md:flex-row md:w-fit w-[70%] flex-col md:gap-3 gap-4 top-0 text-sm md:static absolute transition-all duration-500 md:h-fit h-screen md:bg-transparent md:font-bold font-normal bg-primary-color z-50 lg:pl-20 md:pl-0 px-4 md:pt-0 md:shadow-none shadow-xl select-none
                ${sidebar ? "left-[0]" : "left-[-100%]"}`}
           >
             <ul className="flex flex-row justify-between md:hidden items-center w-full ">
@@ -57,13 +58,21 @@ export const Navbar = () => {
             >
               <Link to="/product">Our Products</Link>
             </li>
+
             <li
               onClick={toggleSidebar}
-              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm md:flex lg:hidden text-nowrap"
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm md:flex hidden text-nowrap"
+            >
+              <Popover content={content} placement="bottom" title="">
+                <Link to="/career">Career</Link>
+              </Popover>
+            </li>
+            <li
+              onClick={toggleSidebar}
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm md:hidden flex text-nowrap"
             >
               <Link to="/career">Career</Link>
             </li>
-
             <li
               onClick={toggleSidebar}
               className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm md:flex text-nowrap"
@@ -72,16 +81,17 @@ export const Navbar = () => {
             </li>
             <li
               onClick={toggleSidebar}
-              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm md:flex text-nowrap"
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm md:hidden flex text-nowrap"
             >
               <Link to="/distributor">Become a distributor</Link>
             </li>
             <li
               onClick={toggleSidebar}
-              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm md:flex text-nowrap"
+              className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm md:hidden flex text-nowrap"
             >
               <Link to="/responsibility">Social responsibility</Link>
             </li>
+
             <li
               onClick={toggleSidebar}
               className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm md:flex text-nowrap"
@@ -109,3 +119,14 @@ export const ScrollToTop = () => {
 };
 
 export default ScrollToTop;
+
+const content = (
+  <div className="flex flex-col gap-2 ">
+    <li className="md:hover:text-primary-color px-2 py-1 rounded-sm transition-all duration-150 md:text-black text-white text-lg md:text-sm md:flex text-nowrap">
+      <Link to="/responsibility">Social responsibility</Link>
+    </li>
+    <li className="md:hover:text-primary-color px-2 py-1 transition-all duration-150 md:text-black text-white text-lg md:text-sm text-nowrap">
+      <Link to="/distributor">Become a distributor</Link>
+    </li>
+  </div>
+);

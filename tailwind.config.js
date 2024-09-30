@@ -7,6 +7,7 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         Baijuree: ["Bai Jamjuree", "sans-serif"],
         ralewaay: ["Raleway", "sans-serif"],
+        Pacifico: ["Pacifico", "cursive;"],
       },
       colors: {
         "primary-color": "#f58634",

@@ -6,12 +6,12 @@ const Details = [
   {
     title: "BLISCO CHIN CHIN",
     image: chinchin,
-    info: " Try out the new Blisco Chin Chin , it's a taste made in heaven. Quick fast snacks on the go for maximum satisfaction",
+    info: " Try out the new Blisco Chin Chin , it's a taste made in heaven,Quick fast snacks on the go for maximum satisfaction",
   },
   {
     title: "BLISCO PEANUTS",
     image: peanut,
-    info: "Try out the new Blisco Peanuts, it's a taste made in heaven. Quick fast snacks on the go for maximum satisfaction",
+    info: "Try out the new Blisco Peanuts, it's a taste made in heaven, Quick fast snacks on the go for maximum satisfaction",
   },
 ];
 
@@ -38,7 +38,7 @@ export const Newproduct = () => {
             are of great standards, as we seek to keep you coming back for more.
           </p>
         </div>
-        <div className="w-full md:w-[50%] newproduct-div1 h-fit md:h-[470px] rounded-lg overflow-hidden">
+        <div className="w-full md:w-[50%] newproduct-div1 h-fit md:h-fit rounded-lg overflow-hidden">
           <Carousel
             draggable={true}
             arrows={false}
@@ -61,11 +61,9 @@ const NewproductDesign = (props) => {
   const { image, title, info } = props.Data;
   return (
     <div className="w-full newproduct-div rounded-lg h-full flex flex-col relative gap-6 overflow-hidden cursor-pointer justify-end bg-primary-color">
-      <div className="justify-center flex mt-4 text-white">
-        <h1 className="font-bold text-xl md:text-2xl">{title}</h1>
-      </div>
-      <img src={image} alt="" className="h-[300px] object-cover md:h-[80%]" />
-      <div className="absolute overflow-hidden text-white p-8 text-lg flex w-full newproduct-overlay transition-all duration-300 bottom-0 rounded-lg">
+      <img src={image} alt="" className="h-[350px] object-cover md:h-[400px]" />
+      <div className="absolute h-full flex flex-col items-center justify-center  text-white text-center text-lg w-full p-3 md:p-10 newproduct-overlay transition-all duration-300 gap-4">
+        <h1 className=" text-2xl md:text-4xl font-Pacifico">{title}</h1>
         <p>{info}</p>
       </div>
     </div>

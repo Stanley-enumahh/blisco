@@ -106,7 +106,7 @@ export default function ProductsDisplay() {
             <Carousel
               draggable={true}
               arrows={false}
-              dots={false}
+              dots={true}
               autoplay
               style={contentStyle}
             >
