@@ -63,7 +63,9 @@ const NewproductDesign = (props) => {
     <div className="w-full newproduct-div rounded-lg h-full flex flex-col relative gap-6 overflow-hidden cursor-pointer justify-end bg-primary-color">
       <img src={image} alt="" className="h-[350px] object-cover md:h-[400px]" />
       <div className="absolute h-full flex flex-col items-center justify-center  text-white text-center text-lg w-full p-3 md:p-10 newproduct-overlay transition-all duration-300 gap-4">
-        <h1 className=" text-2xl md:text-4xl font-Pacifico">{title}</h1>
+        <h1 className=" text-2xl md:text-4xl font-Pacifico drop-shadow-lg">
+          {title}
+        </h1>
         <p>{info}</p>
       </div>
     </div>
