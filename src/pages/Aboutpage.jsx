@@ -7,8 +7,14 @@ import { TbGrowth } from "react-icons/tb";
 import { AiOutlineTransaction } from "react-icons/ai";
 import { Footer } from "../components/footer";
 import ScrollToTop from "../components/Navbar";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function AboutPage() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 }), [];
+  });
   return (
     <div className="w-full h-fit flex flex-col font-ralewaay">
       <ScrollToTop />
@@ -30,7 +36,10 @@ export default function AboutPage() {
                 <CgMoreVertical className="text-secondaryColor" />
               </div>
               <div className="flex w-[90%] md:w-full flex-col md:gap-6 text-start">
-                <p className="flex flex-col gap-4 hover:bg-[#ebebeb] p-5 cursor-pointer transition-all duration-200 hover:shadow-md text-justify">
+                <p
+                  data-aos="fade-in"
+                  className="flex flex-col gap-4 hover:bg-[#ebebeb] p-5 cursor-pointer transition-all duration-200 hover:shadow-md text-justify"
+                >
                   Blisco Foods and Beverages industries is one of the emerging
                   modernized Food Industry with State of the art Modern
                   Facilities Located in Nnewi, Anambra State, Nigeria. The
@@ -43,7 +52,7 @@ export default function AboutPage() {
                   <h2 className="font-bold text-white bg-secondaryColor w-fit flex flex-row gap-2 items-center px-4">
                     Our History <RxArrowTopRight />
                   </h2>
-                  <p className="text-justify">
+                  <p data-aos="fade-in" className="text-justify">
                     Blisco Foods and Beverages Industries was incorporated on
                     the 11th Day of March 2021 with Corporate Affairs Commission
                     (CAC) with registration number BN: 3323792. The products of
@@ -59,7 +68,7 @@ export default function AboutPage() {
                 <h2 className="font-bold text-white bg-secondaryColor w-fit flex flex-row gap-2 items-center px-3">
                   Our management <RxArrowTopRight />
                 </h2>
-                <p className="text-justify">
+                <p data-aos="fade-in" className="text-justify">
                   The Management and Staff of Blisco Foods and Beverages
                   Industry are made up of young, energetic, vibrant and
                   dedicated Professionals, with strong background in Food
@@ -73,7 +82,10 @@ export default function AboutPage() {
                   customer satisfaction.
                 </p>
               </div>
-              <div className="flex flex-col  md:w-full w-[90%] gap-4 hover:bg-[#ebebeb] p-5 cursor-pointer transition-all duration-200 hover:shadow-md">
+              <div
+                data-aos="fade-in"
+                className="flex flex-col  md:w-full w-[90%] gap-4 hover:bg-[#ebebeb] p-5 cursor-pointer transition-all duration-200 hover:shadow-md"
+              >
                 <h2 className="font-bold text-white bg-secondaryColor w-fit flex flex-row gap-2 items-center px-4">
                   Our Impact <RxArrowTopRight />
                 </h2>
@@ -111,7 +123,10 @@ export default function AboutPage() {
 
 export const Emblem = () => {
   return (
-    <div className="md:w-[80%] w-[90%] justify-center text-center md:text-start items-center mb-7 mt-7 flex flex-col gap-3 md:gap-5 text-primary-color">
+    <div
+      data-aos="fade-down"
+      className="md:w-[80%] w-[90%] justify-center text-center md:text-start items-center mb-7 mt-7 flex flex-col gap-3 md:gap-5 text-primary-color"
+    >
       <h1 className="md:text-4xl text-2xl font-bold">
         EXPERIENCE BAKING EXCELLENCE
       </h1>
@@ -126,7 +141,10 @@ export const Value = () => {
       <Emblem />
       <div className="w-full md:w-[80%] items-center flex-col md:flex-row flex gap-8 md:justify-evenly justify-center">
         {/* one value start*/}
-        <div className="w-[330px] md:w-[300px] h-[260px] md:h-[300px] rounded duration-200 transition-all flex p-4 flex-col justify-between border border-gray-300">
+        <div
+          data-aos="fade-right"
+          className="w-[330px] md:w-[300px] h-[260px] md:h-[300px] rounded duration-200 transition-all flex p-4 flex-col justify-between border border-gray-300"
+        >
           <div className="p-4 rounded-full bg-primary-color text-white w-fit">
             <GrTarget size={30} />
           </div>
@@ -140,8 +158,11 @@ export const Value = () => {
         </div>
         {/* one value end*/}
         {/* one value start*/}
-        <div className="w-[330px] md:w-[300px] h-[260px] md:h-[300px] p-4 rounded duration-200  flex flex-col justify-between border border-gray-300">
-          <div className="p-4 rounded-full bg-primary-color text-white w-fit">
+        <div className="w-[330px] md:w-[300px] h-[260px] md:h-[320px] p-4 rounded duration-200  flex flex-col justify-between border border-gray-300">
+          <div
+            data-aos="fade-in"
+            className="p-4 rounded-full bg-primary-color text-white w-fit"
+          >
             <TbGrowth size={30} />
           </div>
           <div className="p-3 flex flex-col cursor-pointer gap-2">
@@ -153,7 +174,10 @@ export const Value = () => {
           </div>
         </div>
         {/* core value */}
-        <div className="w-[330px] md:w-[300px] h-fit md:h-[300px] p-6 text-white rounded duration-200 flex flex-col justify-center border border-gray-300">
+        <div
+          data-aos="fade-left"
+          className="w-[330px] md:w-[300px] h-fit md:h-[300px] p-6 text-white rounded duration-200 flex flex-col justify-center border border-gray-300"
+        >
           <div className="flex flex-col gap-6 cursor-pointer">
             <div className="p-4 rounded-full bg-primary-color text-white w-fit">
               <AiOutlineTransaction size={30} />

@@ -2,51 +2,14 @@ import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/footer";
 import teamPix from "../assets/adeolu-eletu-E7RLgUjjazc-unsplash.jpg";
 import ScrollToTop from "../components/Navbar";
-import { Button, Form, Input, Radio } from "antd";
-import { useState } from "react";
-
-// export default function Career() {
-//   const App = () => {
-//     const [form] = Form.useForm();
-//     const [formLayout, setFormLayout] = useState("horizontal");
-//     const onFormLayoutChange = ({ layout }) => {
-//       setFormLayout(layout);
-//     };
-//   };
-
-//   return (
-//     <Form
-//       layout={formLayout}
-//       form={form}
-//       initialValues={{
-//         layout: formLayout,
-//       }}
-//       onValuesChange={onFormLayoutChange}
-//       style={{
-//         maxWidth: formLayout === "inline" ? "none" : 600,
-//       }}
-//     >
-//       <Form.Item label="Form Layout" name="layout">
-//         <Radio.Group value={formLayout}>
-//           <Radio.Button value="horizontal">Horizontal</Radio.Button>
-//           <Radio.Button value="vertical">Vertical</Radio.Button>
-//           <Radio.Button value="inline">Inline</Radio.Button>
-//         </Radio.Group>
-//       </Form.Item>
-//       <Form.Item label="Field A">
-//         <Input placeholder="input placeholder" />
-//       </Form.Item>
-//       <Form.Item label="Field B">
-//         <Input placeholder="input placeholder" />
-//       </Form.Item>
-//       <Form.Item>
-//         <Button type="primary">Submit</Button>
-//       </Form.Item>
-//     </Form>
-//   );
-// }
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Careerr() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 }), [];
+  });
   return (
     <div className="w-full flex justify-center font-ralewaay">
       <ScrollToTop />
@@ -60,11 +23,11 @@ export default function Careerr() {
               alt=""
             />
             <div className="absolute select-none Career-pix w-full h-full flex flex-col justify-center gap-4 md:pl-[100px] text-white md:p-0 p-5">
-              <h1 className="text-5xl font-bold">
-                Join Our Team At{" "}
+              <h1 data-aos="fade-left" className="text-5xl font-bold">
+                Join Our Team At
                 <span className="text-primary-color">BliscoFoods</span>{" "}
               </h1>
-              <p>
+              <p data-aos="fade-right">
                 Join our superb team by submitting the required details below
                 and we will get in touch with you
               </p>

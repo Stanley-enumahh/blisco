@@ -56,7 +56,7 @@ export const Homeslider = () => {
 const SliderDesign = (props) => {
   const { image, info, title } = props.Data;
   return (
-    <div className="w-full h-screen md:h-[500px] relative">
+    <div className="w-full h-[600px] md:h-[500px] relative">
       <img className="w-full h-full object-cover" src={image} alt="" />
       <div className="absolute slider-overlay w-full top-0 h-full text-white  items-center flex flex-col gap-12 justify-center text-center">
         <div className="flex flex-col gap-6 md:p-0 px-3 justify-center items-center">

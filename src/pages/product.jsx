@@ -13,6 +13,9 @@ import { Footer } from "../components/footer";
 import ScrollToTop from "../components/Navbar";
 import blisco1 from "../assets/blisco1.png";
 import { Carousel } from "antd";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Details = [
   {
@@ -78,6 +81,9 @@ const Details = [
 ];
 
 export default function ProductsDisplay() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 }), [];
+  });
   const contentStyle = {
     height: "100%",
     textAlign: "start",
@@ -142,7 +148,7 @@ const Intro = () => {
       <img src={products} className="h-full w-full object-cover" alt="" />
       <div className="absolute Bakery-overlay top-0 w-full h-full left-0 p-5 md:pl-[100px] flex justify-center flex-col text-white">
         <div className="md:w-[70%] flex gap-3 flex-col">
-          <h1>
+          <h1 data-aos="fade-in" className="text-lg">
             <span className="text-primary-color font-bold">Welcome to </span>
             <br />
             <span className="text-3xl font-bold text-primary-color">
