@@ -78,16 +78,6 @@ const Details = [
 ];
 
 export default function ProductsDisplay() {
-  // const settings = {
-  //   dots: false,
-  //   infinite: true,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   speed: 1000,
-  //   autoplaySpeed: 5000,
-  //   cssEase: "linear",
-  // };
   const contentStyle = {
     height: "100%",
     textAlign: "start",

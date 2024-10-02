@@ -1,7 +1,13 @@
 import { Navbar } from "../components/Navbar";
 import ScrollToTop from "../components/Navbar";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Distributor() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 }), [];
+  });
   return (
     <div className="w-full h-fit flex flex-col bg-[#f6f9ff] overflow-hidden">
       <Navbar />
@@ -9,6 +15,7 @@ export default function Distributor() {
       <div className="mt-[100px]  flex flex-col justify-center  items-center gap-6 mb-8 md:mb-12">
         <div className="w-[90%]">
           <div
+            data-aos="fade-right"
             className="flex bg-primary-color items-center
            h-[100px] md:h-[200px] justify-center rounded-lg shadow-lg"
           >
@@ -25,7 +32,10 @@ export default function Distributor() {
             </p>
             <p className="h-[2px] w-[60px] bg-red-600"></p>
           </div>
-          <div className="w-full md:w-[55%] rounded py-10 px-5 flex bg-secondaryColor text-neutral-100 text-justify">
+          <div
+            data-aos="fade-up"
+            className="w-full md:w-[55%] rounded py-10 px-5 flex bg-secondaryColor text-neutral-100 text-justify "
+          >
             We are looking to collaborate with individuals and organisations who
             are interested in distributing our products. Fill in the below space
             with the required information and we will get back to you.
