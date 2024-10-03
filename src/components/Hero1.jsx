@@ -7,7 +7,7 @@ export default function Hero1() {
         <div className="md:h-full h-fit flex justify-center items-center w-full">
           <img
             src={HeroImage1}
-            className="h-[300px] md:h-[85%] flex w-full object-cover mt-[80px]"
+            className="h-[330px] md:h-[85%] flex w-full object-cover mt-[80px]"
             alt="HeroIMage"
           />
           {/* <img

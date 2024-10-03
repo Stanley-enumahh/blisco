@@ -3,6 +3,7 @@ import ScrollToTop from "../components/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { WhatsApp } from "./Homepage";
 
 export default function Distributor() {
   useEffect(() => {
@@ -11,6 +12,7 @@ export default function Distributor() {
   return (
     <div className="w-full h-fit flex flex-col bg-[#f6f9ff] overflow-hidden">
       <Navbar />
+      <WhatsApp />
       <ScrollToTop />
       <div className="mt-[100px]  flex flex-col justify-center  items-center gap-6 mb-8 md:mb-12">
         <div className="w-[90%]">

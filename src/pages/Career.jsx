@@ -5,15 +5,17 @@ import ScrollToTop from "../components/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { WhatsApp } from "./Homepage";
 
 export default function Careerr() {
   useEffect(() => {
     AOS.init({ duration: 2000 }), [];
   });
   return (
-    <div className="w-full flex justify-center font-ralewaay">
+    <div className="w-full flex justify-center font-ralewaay overflow-hidden">
       <ScrollToTop />
       <Navbar />
+      <WhatsApp />
       <div className="w-full flex justify-center gap-10 items-center flex-col md:mt-[80px] mt-[70px]">
         <div className="w-full md:text-start text-center justify-center items-center flex flex-col gap-6 ">
           <div className="flex flex-col gap-4 md:gap-2 w-full relative">

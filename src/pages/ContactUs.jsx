@@ -7,12 +7,34 @@ import { CiLocationArrow1 } from "react-icons/ci";
 import { Footer } from "../components/footer";
 import { Newsletter } from "../components/Newsletter";
 import ScrollToTop from "../components/Navbar";
+import { WhatsApp } from "./Homepage";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactUs() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_u5r9oz5", "template_uzal6xq", form.current, {
+        publicKey: "qFre4Kf5R8DrTNgbY",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
-    <div className="w-full flex flex-col font-ralewaay">
+    <div className="w-full flex flex-col font-ralewaay overflow-hidden">
       <ScrollToTop />
       <Navbar />
+      <WhatsApp />
       <div className="w-full">
         <div className="h-[370px] relative w-full flex flex-row mt-[80px]">
           <div className="w-full md:w-[50%] md:static absolute h-full flex flex-col gap-4 justify-center items-center md:text-black text-white select-none">
@@ -70,7 +92,7 @@ export default function ContactUs() {
               <p className="h-[2px] w-[100px] bg-red-600"></p>
               <h1 className="font-bold text-4xl">Send Us a Message</h1>
             </div>
-            <div className="md:w-[55%] w-full flex flex-col gap-4 items-center justify-center">
+            {/* <div className="md:w-[55%] w-full flex flex-col gap-4 items-center justify-center">
               <div className="flex-col gap-4 md:gap-0 md:flex-row flex justify-between w-full">
                 <input
                   type="text"
@@ -97,7 +119,48 @@ export default function ContactUs() {
               <button className=" px-2 py-2 w-full rounded text-black shadow-lg hover:bg-primary-color flex flex-row gap-2 justify-center items-center md:mb-0 mb-8 font-bold transition-all duration-150 bg-[#ebebeb]">
                 Submit <CiLocationArrow1 />
               </button>
-            </div>
+            </div> */}
+            <form
+              className="md:w-[55%] w-full flex flex-col gap-4 items-center justify-center"
+              ref={form}
+              onSubmit={sendEmail}
+            >
+              <div className="flex-col gap-4 md:gap-0 md:flex-row flex justify-between w-full">
+                <input
+                  type="text"
+                  name="from_name"
+                  id="name"
+                  placeholder="Name"
+                  className="border-2 bg-transparent border-primary-color outline-none rounded-lg px-5 py-3"
+                />
+
+                <input
+                  type="email"
+                  name="from_email"
+                  placeholder="email"
+                  className="border-2 bg-transparent border-primary-color outline-none rounded-lg px-5 py-3"
+                />
+              </div>
+              <input
+                type="tel"
+                name="from_phoneNumber"
+                id=""
+                placeholder="Phone number"
+                className="border-2 bg-transparent border-primary-color outline-none rounded-lg px-5 py-3 w-full"
+              />
+
+              <textarea
+                name="message"
+                placeholder="Message"
+                className=" border-2 bg-transparent border-primary-color outline-none rounded-lg px-5 py-[70px] w-full"
+              />
+              <input
+                type="submit"
+                value="Send"
+                className="px-2 py-2 w-full rounded text-black shadow-lg hover:bg-primary-color flex flex-row gap-2 justify-center items-center md:mb-0 mb-8 font-bold transition-all duration-150 bg-[#ebebeb] cursor-pointer"
+              />
+            </form>
+            ;
           </div>
         </div>
         <LiveMap />

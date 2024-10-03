@@ -6,6 +6,7 @@ import ovenstand from "../assets/stack of oven.jpg";
 import kitchenImg from "../assets/kitchen img.jpg";
 import freshbread from "../assets/fresh bread.jpg";
 import { Footer } from "../components/footer";
+import { WhatsApp } from "./Homepage";
 
 const Details = [
   {
@@ -29,7 +30,8 @@ export default function Gallery() {
   return (
     <div>
       <Navbar />
-      <div className="w-full flex flex-col gap-4 bg-[#ebebeb]">
+      <WhatsApp />
+      <div className="w-full flex flex-col overflow-hidden gap-4 bg-[#ebebeb]">
         <div className="relative w-full h-[400px] mt-[70px] ">
           <img
             src={galleryHero}

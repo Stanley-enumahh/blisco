@@ -16,6 +16,7 @@ import { Carousel } from "antd";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { WhatsApp } from "./Homepage";
 
 const Details = [
   {
@@ -92,6 +93,7 @@ export default function ProductsDisplay() {
   return (
     <div className="w-full overflow-hidden h-fit items-center flex flex-col font-ralewaay product-main">
       <Navbar />
+      <WhatsApp />
       <ScrollToTop />
       <div className="w-full flex flex-col mt-[80px] justify-center items-center">
         <Intro />

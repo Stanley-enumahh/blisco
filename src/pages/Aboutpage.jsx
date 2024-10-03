@@ -10,15 +10,17 @@ import ScrollToTop from "../components/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { WhatsApp } from "./Homepage";
 
 export default function AboutPage() {
   useEffect(() => {
     AOS.init({ duration: 1000 }), [];
   });
   return (
-    <div className="w-full h-fit flex flex-col font-ralewaay">
+    <div className="w-full h-fit flex flex-col font-ralewaay overflow-hidden">
       <ScrollToTop />
       <Navbar />
+      <WhatsApp />
       <div className="w-full flex-col mt-[80px]">
         <div className="w-full h-[350px] relative">
           <img className="w-full h-full object-cover" src={AboutImg} alt="" />
