@@ -3,7 +3,6 @@ import ContactImg from "../assets/pexels-maria-fernanda-perez-1038050-2128535.jp
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-import { CiLocationArrow1 } from "react-icons/ci";
 import { Footer } from "../components/footer";
 import { Newsletter } from "../components/Newsletter";
 import ScrollToTop from "../components/Navbar";
@@ -121,7 +120,7 @@ export default function ContactUs() {
               </button>
             </div> */}
             <form
-              className="md:w-[55%] w-full flex flex-col gap-4 items-center justify-center"
+              className="md:w-[60%] w-full flex flex-col gap-4 items-center justify-center"
               ref={form}
               onSubmit={sendEmail}
             >

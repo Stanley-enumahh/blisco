@@ -25,7 +25,7 @@ export const Navbar = () => {
         <nav className="flex z-50">
           <ul
             className={`flex md:flex-row md:w-fit w-[70%] flex-col md:gap-3 gap-4 top-0 text-sm md:static absolute transition-all duration-500 md:h-fit h-screen md:bg-transparent md:font-bold font-normal bg-primary-color z-50 lg:pl-20 md:pl-0 px-4 md:pt-0 md:shadow-none shadow-xl select-none
-               ${sidebar ? "left-[0]" : "left-[-100%]"}`}
+               ${sidebar ? "left-[0] " : "left-[-100%]"}`}
           >
             <ul className="flex flex-row justify-between md:hidden items-center w-full ">
               <li>

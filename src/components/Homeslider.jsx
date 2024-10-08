@@ -46,29 +46,28 @@ export const Homeslider = () => {
         fade={true}
       >
         {Details.map((item, index) => {
-          return <SliderDesign key={index} Data={item} />;
+          return <SliderDesign key={index} itemObj={item} />;
         })}
       </Carousel>
     </div>
   );
 };
 
-const SliderDesign = (props) => {
-  const { image, info, title } = props.Data;
+const SliderDesign = ({ itemObj }) => {
   return (
     <div className="w-full h-[600px] md:h-[500px] relative">
-      <img className="w-full h-full object-cover" src={image} alt="" />
+      <img className="w-full h-full object-cover" src={itemObj.image} alt="" />
       <div className="absolute slider-overlay w-full top-0 h-full text-white  items-center flex flex-col gap-12 justify-center text-center">
         <div className="flex flex-col gap-6 md:p-0 px-3 justify-center items-center">
           <h1
             data-aos="fade-right"
             className="font-semibold text-3xl md:text-6xl"
           >
-            {title}
+            {itemObj.title}
           </h1>
           <p data-aos="fade-up" className="h-[2px] w-[200px] bg-red-600"></p>
           <h2 data-aos="fade-left" className="text-lg md:text-3xl">
-            {info}
+            {itemObj.info}
           </h2>
         </div>
         <button

@@ -1,6 +1,4 @@
 import { Navbar } from "../components/Navbar";
-
-// import { Hero2 } from "../components/Hero2";
 import { Footer } from "../components/footer";
 import ScrollToTop from "../components/Navbar";
 import { HeroAbout } from "../components/HeroAbout";

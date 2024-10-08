@@ -1,13 +1,13 @@
-import BliscoBreadCake from "../assets/blisco3.png";
-import BliscoClissicgold from "../assets/blisco8.png";
-import Bliscoroundbread from "../assets/blisco4.png";
-import BliscoCoconutBread from "../assets/blisco7.png";
-import BliscoJumbBread from "../assets/blisco6.png";
-import BliscoPeanut from "../assets/blisco10.png";
-import BliscoChinChin from "../assets/blisco9.png";
-import BliscoMultiGrain from "../assets/blisco5.png";
-import BliscoCakeBread from "../assets/blisco3.png";
-import blisco1 from "../assets/blisco1.png";
+import BliscoBreadCake from "../assets/b2.png";
+import BliscoClissicgold from "../assets/b1.png";
+import Bliscoroundbread from "../assets/b3.png";
+import BliscoCoconutBread from "../assets/b4.png";
+import BliscoJumbBread from "../assets/b4.png";
+import BliscoPeanut from "../assets/b8.png";
+import BliscoChinChin from "../assets/b9.png";
+import BliscoMultiGrain from "../assets/b5.png";
+import BliscoCakeBread from "../assets/b7.png";
+import blisco1 from "../assets/b6.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -50,7 +50,7 @@ export default function MiniProduct() {
     ],
   };
   return (
-    <div className="h-fit md:h-[200px] py-4 md:pt-[30px] w-full">
+    <div className="h-fit md:h-[160px] py-7 md:py-4 md:pt-[30px] w-full miniproduct-container">
       <Slider {...settings}>
         {Details.map((item, index) => {
           return <MiniProductDesign key={index} Data={item} />;
@@ -63,11 +63,11 @@ export default function MiniProduct() {
 const MiniProductDesign = (props) => {
   const { image } = props.Data;
   return (
-    <div className="w-[120px] h-full flex justify-center items-center">
+    <div className="shadow-xl w-[80px] h-[80px] object-cover flex justify-center items-center rounded-full overflow-hidden">
       <img
         src={image}
         alt=""
-        className="md:w-full w-[140px] h-[120px] md:h-[150px] object-contain md:object-fill"
+        className="md:w-full w-[80px] h-[80px] md:h-[100px] object-contain md:object-fill"
       />
     </div>
   );
