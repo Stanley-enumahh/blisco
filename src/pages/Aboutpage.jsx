@@ -1,5 +1,5 @@
 import { Navbar } from "../components/Navbar";
-import AboutImg from "../assets/IMG_20231106_171014_490@-1279249875.jpg";
+import AboutImg from "../assets/stack of oven.jpg";
 import { CgMoreVertical } from "react-icons/cg";
 import { RxArrowTopRight } from "react-icons/rx";
 import { GrTarget } from "react-icons/gr";
@@ -25,7 +25,10 @@ export default function AboutPage() {
         <div className="w-full h-[350px] relative">
           <img className="w-full h-full object-cover" src={AboutImg} alt="" />
           <div className="absolute overlay w-full top-0 h-full  text-white  items-center flex">
-            <h1 className="md:ml-[200px] ml-7 text-xl bg-primary-color rounded-sm px-4 shadow-lg">
+            <h1
+              data-aos="fade-right"
+              className="md:ml-[100px] ml-7 text-4xl font-bold text-primary-color"
+            >
               ABOUT US
             </h1>
           </div>
@@ -34,7 +37,7 @@ export default function AboutPage() {
           <div className="md:w-[90%] w-full flex flex-col md:flex-row gap-6 md:gap-9 md:justify-between justify-center mt-[40px] md:mt-[70px]">
             <div className="flex flex-col md:gap-5 gap-3 w-full md:items-start items-center md:w-[50%]">
               <div className="flex flex-row items-center text-2xl">
-                <h1 className="font-bold ml-5">About Blisco foods</h1>
+                <h1 className="font-bold ml-5 uppercase">About Blisco foods</h1>
                 <CgMoreVertical className="text-secondaryColor" />
               </div>
               <div className="flex w-[90%] md:w-full flex-col md:gap-6 text-start">
@@ -51,7 +54,7 @@ export default function AboutPage() {
                   production of both Alcoholic and Non Alcoholic Beverages.
                 </p>
                 <div className="flex flex-col gap-4 hover:bg-[#ebebeb] p-5 cursor-pointer transition-all duration-200 hover:shadow-md">
-                  <h2 className="font-bold text-white bg-secondaryColor w-fit flex flex-row gap-2 items-center px-4">
+                  <h2 className="font-bold text-white bg-secondaryColor w-fit flex flex-row gap-2 items-center px-4 uppercase">
                     Our History <RxArrowTopRight />
                   </h2>
                   <p data-aos="fade-in" className="text-justify">
@@ -67,7 +70,7 @@ export default function AboutPage() {
             {/* right div */}
             <div className="flex flex-col gap-4 w-full md:w-[70%] items-center mb-6">
               <div className="flex flex-col md:w-full w-[90%] gap-4 hover:bg-[#ebebeb] p-5 cursor-pointer transition-all duration-200 hover:shadow-md">
-                <h2 className="font-bold text-white bg-secondaryColor w-fit flex flex-row gap-2 items-center px-3">
+                <h2 className="font-bold text-white bg-secondaryColor w-fit flex flex-row gap-2 items-center px-3 uppercase">
                   Our management <RxArrowTopRight />
                 </h2>
                 <p data-aos="fade-in" className="text-justify">
@@ -88,7 +91,7 @@ export default function AboutPage() {
                 data-aos="fade-in"
                 className="flex flex-col  md:w-full w-[90%] gap-4 hover:bg-[#ebebeb] p-5 cursor-pointer transition-all duration-200 hover:shadow-md"
               >
-                <h2 className="font-bold text-white bg-secondaryColor w-fit flex flex-row gap-2 items-center px-4">
+                <h2 className="font-bold text-white bg-secondaryColor w-fit flex flex-row gap-2 items-center px-4 uppercase">
                   Our Impact <RxArrowTopRight />
                 </h2>
                 <p className="text-justify">

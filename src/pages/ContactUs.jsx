@@ -1,5 +1,5 @@
 import { Navbar } from "../components/Navbar";
-import ContactImg from "../assets/pexels-maria-fernanda-perez-1038050-2128535.jpg";
+import ContactImg from "../assets/basket.jpg";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";

@@ -1,13 +1,13 @@
-import BliscoBreadCake from "../assets/b2.png";
-import BliscoClissicgold from "../assets/b1.png";
-import Bliscoroundbread from "../assets/b3.png";
-import BliscoCoconutBread from "../assets/b4.png";
-import BliscoJumbBread from "../assets/b4.png";
-import BliscoPeanut from "../assets/b8.png";
-import BliscoChinChin from "../assets/b9.png";
-import BliscoMultiGrain from "../assets/b5.png";
-import BliscoCakeBread from "../assets/b7.png";
-import blisco1 from "../assets/b6.png";
+import BliscoBreadCake from "../assets/b2.jpg";
+import BliscoClissicgold from "../assets/b1.jpg";
+import Bliscoroundbread from "../assets/b3.jpg";
+import BliscoCoconutBread from "../assets/b4.jpg";
+import BliscoJumbBread from "../assets/b4.jpg";
+import BliscoPeanut from "../assets/b8.jpg";
+import BliscoChinChin from "../assets/b9.jpg";
+import BliscoMultiGrain from "../assets/b5.jpg";
+import BliscoCakeBread from "../assets/b7.jpg";
+import blisco1 from "../assets/b6.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -67,7 +67,7 @@ const MiniProductDesign = (props) => {
       <img
         src={image}
         alt=""
-        className="md:w-full w-[80px] h-[80px] md:h-[100px] object-contain md:object-fill"
+        className="md:w-full w-[80px] h-[80px] md:h-[100px] object-contain md:object-contain"
       />
     </div>
   );

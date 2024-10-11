@@ -14,7 +14,7 @@ export const Navbar = () => {
 
   return (
     <div className="flex w-full h-fit justify-center py-2 z-50 bg-[#fbf9ff] fixed font-ralewaay">
-      <div className="w-[90%] lg:w-[95%] h-fit flex flex-row justify-between items-center">
+      <div className="w-[90%] lg:w-[85%] h-fit flex flex-row justify-between items-center">
         <div className="w-fit h-[70px] p-2 overflow-hidden flex justify-center items-center">
           <img
             src={Logo}

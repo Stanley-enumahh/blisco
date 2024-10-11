@@ -54,8 +54,10 @@ export const Footer = () => {
               {" "}
               <FaFacebookF className="cursor-pointer hover:-translate-y-2 transition-all duration-150" />
             </a>
+            <a href="https://wa.me/+2347031058606">
+              <IoLogoWhatsapp className="cursor-pointer hover:-translate-y-2 transition-all duration-150" />
+            </a>
 
-            <IoLogoWhatsapp className="cursor-pointer hover:-translate-y-2 transition-all duration-150" />
             <FaTwitter className="cursor-pointer hover:-translate-y-2 transition-all duration-150" />
           </div>
         </div>

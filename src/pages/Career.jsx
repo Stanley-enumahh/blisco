@@ -1,6 +1,6 @@
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/footer";
-import teamPix from "../assets/adeolu-eletu-E7RLgUjjazc-unsplash.jpg";
+import teamPix from "../assets/businessImg.jpg";
 import ScrollToTop from "../components/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";

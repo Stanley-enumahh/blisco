@@ -1,6 +1,6 @@
-import Slide1 from "../assets/mink-mingle-qZ5lPCPvdXE-unsplash.jpg";
-import Slide2 from "../assets/silvana-carlos-Da9EuBu_oVA-unsplash.jpg";
-import Slide3 from "../assets/pexels-marcel-fiedler-400737-1079020.jpg";
+import Slide1 from "../assets/snacks.jpg";
+import Slide2 from "../assets/homeslider2.jpg";
+import Slide3 from "../assets/homeslider1.jpg";
 import { Carousel } from "antd";
 import { Link } from "react-router-dom";
 import AOS from "aos";

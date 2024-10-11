@@ -10,7 +10,7 @@ import whatsAppicon from "../assets/2044px-WhatsApp.svg.png";
 
 export default function Homepage() {
   return (
-    <div className="w-full overflow-hidden flex flex-col overflow-hidden">
+    <div className="w-full overflow-hidden flex flex-col">
       <ScrollToTop />
       <div className=" flex flex-col h-fit w-full font-ralewaay">
         <Navbar />

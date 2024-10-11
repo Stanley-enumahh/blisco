@@ -1,17 +1,17 @@
-import peanut from "../assets/peanut.png";
-import chinchin from "../assets/chinchin.jpeg";
+import peanut from "../assets/Bpeanut.jpg";
+import chinchin from "../assets/Bchinchin.png";
 import { Carousel } from "antd";
 
 const Details = [
   {
-    title: "BLISCO CHIN CHIN",
-    image: chinchin,
+    title: "BLISCO PEANUTS",
+    image: peanut,
     info: " Try out the new Blisco Chin Chin , it's a taste made in heaven,Quick fast snacks on the go for maximum satisfaction",
   },
   {
-    title: "BLISCO PEANUTS",
-    image: peanut,
-    info: "Try out the new Blisco Peanuts, it's a taste made in heaven, Quick fast snacks on the go for maximum satisfaction",
+    title: "BLISCO CHIN CHIN",
+    image: chinchin,
+    // info: "Try out the new Blisco Peanuts, it's a taste made in heaven, Quick fast snacks on the go for maximum satisfaction",
   },
 ];
 
@@ -31,7 +31,7 @@ export const Newproduct = () => {
             </h1>
             <p className="h-[2px] w-[100px] bg-red-600"></p>
           </div>
-          <p className="text-justify">
+          <p className="text-justify leading-relaxed">
             Blisco Foods and Beverages will be introducing new bakery products
             inline with customer demands. As a Company primarily focused on
             producing healthy baked products, we ensure that all our products
@@ -62,11 +62,9 @@ const NewproductDesign = (props) => {
   return (
     <div className="w-full newproduct-div rounded-lg h-full flex flex-col relative gap-6 overflow-hidden cursor-pointer justify-end bg-primary-color">
       <img src={image} alt="" className="h-[350px] object-cover md:h-[400px]" />
-      <div className="absolute h-full flex flex-col items-center justify-center  text-white text-center text-lg w-full p-3 md:p-10 newproduct-overlay transition-all duration-300 gap-4">
-        <h1 className=" text-2xl md:text-4xl font-Pacifico drop-shadow-lg">
-          {title}
-        </h1>
-        <p>{info}</p>
+      <div className="absolute h-[100px] flex flex-col items-center justify-center  text-white text-center text-lg w-full p-3 md:p-10 newproduct-overlay transition-all duration-300 gap-1">
+        <h1 className=" text-2xl md:text-2xl">{title}</h1>
+        <p className="text-xs">{info}</p>
       </div>
     </div>
   );
