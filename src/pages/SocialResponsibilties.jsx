@@ -28,9 +28,9 @@ export default function Responsibility() {
           <div className="flex flex-col md:flex-row gap-4 justify-between h-fit md:h-[200px]">
             <div
               data-aos="fade-right"
-              className="h-full w-full md:w-[50%] flex flex-col md:flex-row gap-2 md:items-center bg-[#ebebeb] rounded p-4"
+              className="h-full w-full md:w-[50%] flex flex-col md:flex-row gap-2 items-center justify-center bg-[#ebebeb] rounded p-4"
             >
-              <h1 className="text-lg md:text-2xl font-bold text-center text-wrap">
+              <h1 className="text-lg md:text-2xl font-bold text-center text-nowrap">
                 CO-OPERATE SOCIAL RESPONSIBILITY
               </h1>
               <p className="h-[2px] w-[60px] md:w-[100px] bg-red-600"></p>
@@ -61,7 +61,7 @@ export default function Responsibility() {
             </div>
             <div
               data-aos="fade-left"
-              className="h-full w-full md:w-[50%] flex flex-col md:flex-row-reverse gap-2 md:items-center bg-[#ebebeb] rounded p-4"
+              className="h-full w-full md:w-[50%] flex flex-col md:flex-row gap-2 items-center justify-center bg-[#ebebeb] rounded p-4"
             >
               <h1 className="text-lg md:text-2xl font-bold">
                 ENVIRONMENTAL RESPONSIBILITY
@@ -73,7 +73,7 @@ export default function Responsibility() {
           <div className="flex flex-col md:flex-row gap-4 justify-between h-fit md:h-[200px]">
             <div
               data-aos="fade-right"
-              className="h-full w-full md:w-[50%] flex flex-col md:flex-row gap-2 md:items-center bg-[#ebebeb] rounded p-4"
+              className="h-full w-full md:w-[50%] flex flex-col md:flex-row gap-2 items-center justify-center bg-[#ebebeb] rounded p-4"
             >
               <h1 className="text-lg md:text-2xl font-bold">
                 STAKE HOLDER ENGAGEMENT
