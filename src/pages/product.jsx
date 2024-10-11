@@ -2,16 +2,16 @@ import { Navbar } from "../components/Navbar";
 import BliscoBreadCake from "../assets/p1.png";
 import products from "../assets/fresh bread.jpg";
 import BliscoTeachoco from "../assets/p2.png";
-import Bliscoroundbread from "../assets/blisco4.png";
-import BliscoCoconutBread from "../assets/blisco7.png";
-import BliscoJumbBread from "../assets/blisco6.png";
-import BliscoPeanut from "../assets/blisco10.png";
-import BliscoChinChin from "../assets/blisco9.png";
-import BliscoMultiGrain from "../assets/blisco5.png";
-import BliscoCakeBread from "../assets/blisco3.png";
+import Bliscoroundbread from "../assets/roundbread.jpg";
+import BliscoCoconutBread from "../assets/cocnutbread.jpg";
+import BliscoJumbBread from "../assets/jumbo.jpg";
+import BliscoPeanut from "../assets/Bpeanut.jpg";
+import BliscoChinChin from "../assets/chinchin.jpg";
+import BliscoMultiGrain from "../assets/multigrain.jpg";
+import BliscoClissicGold from "../assets/classicGold.jpg";
 import { Footer } from "../components/footer";
 import ScrollToTop from "../components/Navbar";
-import blisco1 from "../assets/blisco1.png";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -20,7 +20,7 @@ import { WhatsApp } from "./Homepage";
 const Details = [
   {
     image: BliscoBreadCake,
-    title: "BLISCO ECONOMY BREAD",
+    title: "BLISCO CAKE BREAD",
     info: "This is our Pocket Friendly Bread. It is rich in taste and Quality very soft and tasty",
     weight: "Net Weight: 1.2kg",
   },
@@ -32,13 +32,13 @@ const Details = [
     category: "right",
   },
   {
-    image: blisco1,
+    image: BliscoClissicGold,
     title: "BLISCO CLASSIC GOLD",
     info: "This is our Flagship Toast Bread, it is produced with the best quality ingredients that are good for your body. it is very soft, always fresh and tasty. it contains mixed fruits and spices ",
     weight: "Net Weight: 1kg",
   },
   {
-    image: BliscoCakeBread,
+    image: BliscoBreadCake,
     title: "BLISCO CAKE BREAD",
     info: "Blisco Cake Bread is our Premium Sliced Bread, it is delicious and tastes like Cake, very fluffy and Unique taste.it is moderate in Size and can serve as both breakfast and used for toast.",
     weight: "Net Weight: 850g",
@@ -117,7 +117,7 @@ export function ProductDesign({ itemObj }) {
         itemObj.category && "md:flex-row-reverse"
       }`}
     >
-      <div className="w-[90%] md:w-[50%] h-fit flex flex-col justify-center gap-3">
+      <div className="w-[90%] md:w-[60%] h-fit flex flex-col justify-center gap-3">
         <h1 className="font-bold text-xl md:text-3xl">
           {itemObj.title}
           <p className="text-sm">{itemObj.weight}</p>

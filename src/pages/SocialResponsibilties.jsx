@@ -30,7 +30,7 @@ export default function Responsibility() {
               data-aos="fade-right"
               className="h-full w-full md:w-[50%] flex flex-col md:flex-row gap-2 items-center justify-center bg-[#ebebeb] rounded p-4"
             >
-              <h1 className="text-lg md:text-2xl font-bold text-center text-nowrap">
+              <h1 className="text-xl md:text-2xl font-bold text-center text-wrap">
                 CO-OPERATE SOCIAL RESPONSIBILITY
               </h1>
               <p className="h-[2px] w-[60px] md:w-[100px] bg-red-600"></p>
@@ -63,7 +63,7 @@ export default function Responsibility() {
               data-aos="fade-left"
               className="h-full w-full md:w-[50%] flex flex-col md:flex-row gap-2 items-center justify-center bg-[#ebebeb] rounded p-4"
             >
-              <h1 className="text-lg md:text-2xl font-bold">
+              <h1 className="text-xl md:text-2xl font-bold text-center text-wrap">
                 ENVIRONMENTAL RESPONSIBILITY
               </h1>
               <p className="h-[2px] w-[60px] md:w-[100px] bg-red-600"></p>
@@ -75,7 +75,7 @@ export default function Responsibility() {
               data-aos="fade-right"
               className="h-full w-full md:w-[50%] flex flex-col md:flex-row gap-2 items-center justify-center bg-[#ebebeb] rounded p-4"
             >
-              <h1 className="text-lg md:text-2xl font-bold">
+              <h1 className="text-xl md:text-2xl font-bold text-center text-wrap">
                 STAKE HOLDER ENGAGEMENT
               </h1>
               <p className="h-[2px] w-[100px] bg-red-600"></p>
