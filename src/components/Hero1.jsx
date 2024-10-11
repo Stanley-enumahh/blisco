@@ -13,7 +13,7 @@ export default function Hero1() {
           />
           <img
             src={HeroImage2}
-            className="md:hidden flex bg-red-300 h-[300px] w-full object-cover mt-[80px]"
+            className="md:hidden flex h-[300px] w-full object-cover mt-[80px]"
             alt="HeroIMage"
           />
         </div>

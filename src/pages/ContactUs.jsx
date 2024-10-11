@@ -39,7 +39,7 @@ export default function ContactUs() {
           <div className="w-full md:w-[50%] md:static absolute h-full flex flex-col gap-4 justify-center items-center md:text-black text-white select-none">
             <p>Contact</p>
             <p className="h-[2px] w-[100px] bg-red-600"></p>
-            <h1 className="text-4xl font-bold drop-shadow-md md:drop-shadow-none">
+            <h1 className="text-2xl md:text-4xl font-bold drop-shadow-md md:drop-shadow-none">
               Get In Touch With Us
             </h1>
           </div>
@@ -159,7 +159,6 @@ export default function ContactUs() {
                 className="px-2 py-2 w-full rounded text-black shadow-lg hover:bg-primary-color flex flex-row gap-2 justify-center items-center md:mb-0 mb-8 font-bold transition-all duration-150 bg-[#ebebeb] cursor-pointer"
               />
             </form>
-            ;
           </div>
         </div>
         <LiveMap />
